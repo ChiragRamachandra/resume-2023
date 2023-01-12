@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 type Props = {};
 
-export default function Header({}: Props) {
+const Header = ({}: Props) => {
 	return (
 		<header className='sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center'>
 			<motion.div
@@ -42,6 +42,12 @@ export default function Header({}: Props) {
 					fgColor='grey'
 					bgColor='transparent'
 				/>
+				<SocialIcon
+					target='_blank'
+					url='https://www.linkedin.com/in/chiragram/'
+					fgColor='grey'
+					bgColor='transparent'
+				/>
 			</motion.div>
 			<motion.div
 				initial={{
@@ -55,7 +61,7 @@ export default function Header({}: Props) {
 					scale: 1,
 				}}
 				transition={{ duration: 1.5 }}
-				className='flex flex-row items-center cursor-pointer'
+				className='flex flex-row items-center cursor-pointer pr-2'
 			>
 				<SocialIcon
 					target='_blank'
@@ -70,4 +76,5 @@ export default function Header({}: Props) {
 			</motion.div>
 		</header>
 	);
-}
+};
+export default Header;

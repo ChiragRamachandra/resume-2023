@@ -19,11 +19,13 @@ export default function Hero({}: Props) {
 		>
 			<BackgroundCircles />
 			<Image
+				priority
+				loading='eager'
 				className='relative rounded-full mx-auto object-cover'
-				src='https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=766&q=80'
+				src='/images/chirag_ramachandra.jpg'
 				alt='Picture of the author'
-				width={100}
-				height={100}
+				width={150}
+				height={150}
 			/>
 			<div className='z-20'>
 				<h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>
