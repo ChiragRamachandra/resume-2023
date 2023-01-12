@@ -7,6 +7,9 @@ import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Footer from '../components/Footer';
 
+import { ChevronUpIcon } from '@heroicons/react/24/solid';
+import Link from 'next/link';
+
 export default function Home() {
 	return (
 		<div
@@ -45,6 +48,12 @@ export default function Home() {
 			<section className='snap-end'>
 				<Footer />
 			</section>
+
+			<div className='sticky bottom-14 p-3 flex items-end justify-end max-w-7xl mx-auto z-20 '>
+				<Link href={'#hero'}>
+					<ChevronUpIcon className='h-10 w-10 background mr-4 text-gray-400' />
+				</Link>
+			</div>
 		</div>
 	);
 }

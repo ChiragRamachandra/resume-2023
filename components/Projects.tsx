@@ -41,9 +41,9 @@ const Projects = (props: Props) => {
 								transition={{ duration: 1.2 }}
 							>
 								<Image
-									width={300}
-									height={300}
-									src='/images/chirag_ramachandra.JPG'
+									width={450}
+									height={250}
+									src='/images/projects/collegepass.png'
 									alt='profile'
 								/>
 							</motion.div>

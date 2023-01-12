@@ -24,8 +24,9 @@ const Footer = ({}: Props) => {
 				}}
 				className='flex flex-row items-center justify-center'
 			>
-				{/* Social Icons */}
-				<PhoneIcon className='h-5 w-5 background text-gray-400' />
+				<p className='inline-flex text-sm text-gray-400 px-4'>
+					Chirag Ramachandra © 2023
+				</p>
 			</motion.div>
 			<motion.div
 				initial={{
@@ -39,18 +40,14 @@ const Footer = ({}: Props) => {
 					scale: 1,
 				}}
 				transition={{ duration: 1.5 }}
-				className='flex flex-row items-center cursor-pointer'
+				className='flex flex-col items-center cursor-pointer'
 			>
-				<SocialIcon
-					target='_blank'
-					className='cursor-pointer'
-					network='email'
-					fgColor='grey'
-					bgColor='transparent'
-				/>
-				<p className='uppercase hidden md:inline-flex text-sm text-gray-400'>
-					get in touch
-				</p>
+				<div className='flex flex-row'>
+					<p className='uppercase hidden md:inline-flex text-sm text-gray-400 px-4'>
+						+1 647 679 5831
+					</p>
+					<PhoneIcon className='h-5 w-5 background mr-4 text-gray-400' />
+				</div>
 			</motion.div>
 		</footer>
 	);

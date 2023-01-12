@@ -1,6 +1,7 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 type Props = {};
 
@@ -32,7 +33,7 @@ const Header = ({}: Props) => {
 				/>
 				<SocialIcon
 					target='_blank'
-					url='https://www.youtube.com/@chiragramachandra'
+					url='https://www.facebook.com/ChiragRamachandra16/'
 					fgColor='grey'
 					bgColor='transparent'
 				/>
@@ -45,6 +46,12 @@ const Header = ({}: Props) => {
 				<SocialIcon
 					target='_blank'
 					url='https://www.linkedin.com/in/chiragram/'
+					fgColor='grey'
+					bgColor='transparent'
+				/>
+				<SocialIcon
+					target='_blank'
+					url='https://www.instagram.com/fullstack_webdev/'
 					fgColor='grey'
 					bgColor='transparent'
 				/>
@@ -64,15 +71,18 @@ const Header = ({}: Props) => {
 				className='flex flex-row items-center cursor-pointer pr-2'
 			>
 				<SocialIcon
+					href='mailto:chirag.ramachandra@gmail.com'
 					target='_blank'
 					className='cursor-pointer'
 					network='email'
 					fgColor='grey'
 					bgColor='transparent'
 				/>
-				<p className='uppercase hidden md:inline-flex text-sm text-gray-400'>
-					get in touch
-				</p>
+				<Link href='mailto:chirag.ramachandra@gmail.com' target='_blank'>
+					<p className='uppercase hidden md:inline-flex text-sm text-gray-400'>
+						get in touch
+					</p>
+				</Link>
 			</motion.div>
 		</header>
 	);

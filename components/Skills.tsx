@@ -24,12 +24,9 @@ const Skills = (props: Props) => {
 				className='uppercase absolute 
 			tracking-[3px] text-gray-500 text-sm top-36'
 			>
-				Hover over
+				{/* Hover over */}{' '}
 			</h3>
-			<div className='grid grid-cols-4 gap-5'>
-				<Skill />
-				<Skill />
-				<Skill />
+			<div className='grid grid-cols-4 gap-5 p-1'>
 				<Skill />
 				<Skill />
 				<Skill />
