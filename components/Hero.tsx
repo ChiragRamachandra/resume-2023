@@ -3,12 +3,13 @@ import Image from 'next/image';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import BackgroundCircles from './BackgroundCircles';
 import Link from 'next/link';
+import { getHeroBannerText } from 'data';
 
 type Props = {};
 
 export default function Hero({}: Props) {
-	const [text, count] = useTypewriter({
-		words: ['Hi My Name is Chirag', "I'm Awesome"],
+	const [text] = useTypewriter({
+		words: getHeroBannerText(),
 		loop: true,
 		delaySpeed: 2000,
 	});
@@ -29,7 +30,7 @@ export default function Hero({}: Props) {
 			/>
 			<div className='z-20'>
 				<h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>
-					Software Engineer
+					Fullstack Developer
 				</h2>
 				<h1 className='text-5xl lg:text-6xl font-semibold px-10'>
 					<span>{text}</span>
@@ -48,7 +49,7 @@ export default function Hero({}: Props) {
 					<Link href='#projects'>
 						<button className='heroButton'>Projects</button>
 					</Link>
-					<Link href='#project'>
+					<Link href='/blog'>
 						<button className='heroButton'>Blog</button>
 					</Link>
 				</div>

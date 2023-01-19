@@ -1,5 +1,4 @@
 import React from 'react';
-import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
 import { PhoneIcon } from '@heroicons/react/24/solid';
 
@@ -20,7 +19,7 @@ const Footer = ({}: Props) => {
 					scale: 1,
 				}}
 				transition={{
-					duration: 1.5,
+					duration: 0.5,
 				}}
 				className='flex flex-row items-center justify-center'
 			>
@@ -39,7 +38,7 @@ const Footer = ({}: Props) => {
 					opacity: 1,
 					scale: 1,
 				}}
-				transition={{ duration: 1.5 }}
+				transition={{ duration: 0.5 }}
 				className='flex flex-col items-center cursor-pointer'
 			>
 				<div className='flex flex-row'>

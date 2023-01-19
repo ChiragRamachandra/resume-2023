@@ -11,38 +11,28 @@ const Projects = (props: Props) => {
 			initial={{ y: -50, opacity: 0 }}
 			whileInView={{ y: 0, opacity: 1 }}
 			viewport={{ once: true }}
-			transition={{ duration: 1.2 }}
-			className='h-screen relative flex overflow-hidden flex-col text-left 
-			md:flex-row max-w-full justify-evenly mx-auto items-center z-0'
+			transition={{ duration: 0.3 }}
+			className='h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0 cursor-pointer'
 		>
-			<h3
-				className='uppercase absolute 
-			tracking-[20px] text-gray-500 text-2xl top-24'
-			>
+			<h3 className='uppercase absolute tracking-[20px] text-gray-500 text-2xl top-24'>
 				Projects
 			</h3>
-			<div
-				className='relative w-full flex overflow-x-scroll 
-			overflow-y-hidden snap-x snap-mandatory z-20 
-			 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#1ecbe1]/80'
-			>
+			<div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20  scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#1ecbe1]/80'>
 				{allProjects.map((project, idx) => {
 					return (
 						<div
 							key={idx}
-							className='w-screen flex-shrink-0 snap-center 
-						flex flex-col space-y-4 items-center justify-center 
-						p-20 md:p-44 h-screen top-20'
+							className='w-screen flex-shrink-0 snap-center flex flex-col space-y-4 items-center justify-center p-20 md:p-44 h-screen top-20'
 						>
 							<motion.div
 								initial={{ y: -300, opacity: 0 }}
 								whileInView={{ y: 0, opacity: 1 }}
 								viewport={{ once: true }}
-								transition={{ duration: 1.2 }}
+								transition={{ duration: 0.3 }}
 							>
 								<Image
-									width={450}
-									height={250}
+									width={400}
+									height={400}
 									src='/images/projects/collegepass.png'
 									alt='profile'
 								/>
@@ -65,10 +55,7 @@ const Projects = (props: Props) => {
 					);
 				})}
 			</div>
-			<div
-				className='w-full absolute top-[30%] bg-[#1ecbe1]/5 left-0 h-[500px] 
-			-skew-y-12'
-			></div>
+			<div className='w-full absolute top-[30%] bg-[#1ecbe1]/5 left-0 h-[500px] -skew-y-12'></div>
 		</motion.div>
 	);
 };

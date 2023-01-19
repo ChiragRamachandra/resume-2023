@@ -6,12 +6,7 @@ type Props = {};
 const ExperienceCard = (props: Props) => {
 	return (
 		<div>
-			<article
-				className='flex flex-col rounded-lg items-center space-y-7 
-		flex-shrink-0 w-[250px] md:w-[300px] xl:w-[700px] 
-		snap-center  p-2 bg-[#292929] hover:opacity-100 opacity-40
-		cursor-pointer transition-opacity duration-200 overflow-hidden'
-			>
+			<article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[250px] md:w-[300px] xl:w-[700px] 	snap-center  p-2 bg-[#292929] hover:opacity-100 opacity-40	cursor-pointer transition-opacity duration-200 overflow-hidden'>
 				<motion.img
 					initial={{
 						y: -10,
@@ -20,8 +15,7 @@ const ExperienceCard = (props: Props) => {
 					transition={{ duration: 1.2 }}
 					whileInView={{ y: 1, opacity: 1 }}
 					viewport={{ once: true }}
-					className='w-24 h-24 rounded-full xl:w-[200px] xl:h-[200px]
-				object-cover object-center'
+					className='w-24 h-24 rounded-full xl:w-[200px] xl:h-[200px]	object-cover object-center'
 					src='/images/experience/getty_logo.jpeg'
 					alt='company-logo'
 				/>
