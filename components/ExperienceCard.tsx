@@ -50,7 +50,7 @@ const ExperienceCard = ({
 						<ul className='list-disc space-y-1 p-1 text-sm text-justify'>
 							{experienceBulletPoint.map((bulletPoint, idx) => (
 								<li
-									className='p-2 list-disc space-y-1 text-sm text-justify mx-2'
+									className='p-1 list-disc space-y-1 text-sm text-justify mx-3'
 									key={idx}
 								>
 									{bulletPoint}
