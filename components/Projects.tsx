@@ -1,11 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { getProjectData } from 'data';
+import Link from 'next/link';
 
 type Props = {};
 
 const Projects = (props: Props) => {
-	const allProjects = [1, 2, 3, 4, 5];
+	const allProjects = getProjectData();
 	return (
 		<motion.div
 			initial={{ y: -50, opacity: 0 }}
@@ -18,10 +20,10 @@ const Projects = (props: Props) => {
 				Projects
 			</h3>
 			<div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20  scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#1ecbe1]/80'>
-				{allProjects.map((project, idx) => {
+				{allProjects.map((project) => {
 					return (
 						<div
-							key={idx}
+							key={project.id}
 							className='w-screen flex-shrink-0 snap-center flex flex-col space-y-4 items-center justify-center p-20 md:p-44 h-screen top-20'
 						>
 							<motion.div
@@ -33,22 +35,20 @@ const Projects = (props: Props) => {
 								<Image
 									width={400}
 									height={400}
-									src='/images/projects/collegepass.png'
-									alt='profile'
+									src={project.imageURL}
+									alt={project.name}
 								/>
 							</motion.div>
 							<div className='space-y-10 px-0 md:px-10 max-w-6xl'>
 								<h4 className='text-4xl font-semibold text-center'>
 									<span className='underline decoration-[#F7AB0A]/50'>
-										Case Study{idx + 1}
+										<Link href={project.projectURL} target='_blank'>
+											{project.name}{' '}
+										</Link>
 									</span>
-									: CP {project}
 								</h4>
 								<p className='text-lg text-center md:text-left'>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-									doloribus illum alias consequatur excepturi natus possimus
-									quis voluptatibus hic dolor, atque aspernatur expedita
-									deleniti deserunt suscipit! A similique laboriosam voluptate?
+									{project.summary}
 								</p>
 							</div>
 						</div>

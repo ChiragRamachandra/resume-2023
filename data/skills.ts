@@ -3,7 +3,7 @@ import { Skills } from 'types';
 const getSkillsData = (): Skills[] => {
 	return [
 		{
-			id: 1,
+			id: 15,
 			name: 'Typescript',
 			url: 'images/technology/ts_logo.png',
 		},
@@ -13,7 +13,7 @@ const getSkillsData = (): Skills[] => {
 			url: 'images/technology/aws_logo.jpeg',
 		},
 		{
-			id: 12,
+			id: 2,
 			name: 'CSS',
 			url: 'images/technology/css_logo.png',
 		},
