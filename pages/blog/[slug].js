@@ -5,6 +5,7 @@ import { marked } from 'marked';
 import Link from 'next/link';
 import Layout from '@/components/Layout';
 import CategoryLabel from '@/components/CategoryLabel';
+import Image from 'next/image';
 
 export default function PostPage({
 	frontmatter: { title, category, date, cover_image, author, author_image },
@@ -13,29 +14,58 @@ export default function PostPage({
 }) {
 	return (
 		<Layout title={title}>
-			<div className='h-screen top-24'>
-				<Link href='/blog'>Go Back</Link>
-				<div className='w-full px-10 py-6 bg-white rounded-lg shadow-md mt-6'>
-					<div className='flex justify-between items-center mt-4'>
-						<h1 className='text-5xl mb-7'>{title}</h1>
-						<CategoryLabel>{category}</CategoryLabel>
-					</div>
-					<img src={cover_image} alt='' className='w-full rounded' />
+			<div className='h-screen items-start'>
+				<div className='w-full px-10 py-4 bg-[rgb(36,36,36)] rounded-lg mt-6'>
+					<div>
+						<div className='flex items-start justify-start p-5'>
+							<Link
+								className='mx-1 uppercase text-gray-500 text-sm hover:underline decoration-[#1ecbe1]'
+								href='/'
+							>
+								HOME /
+							</Link>
 
-					<div className='flex justify-between items-center bg-gray-100 p-2 my-8'>
-						<div className='flex items-center'>
-							<img
-								src={author_image}
-								alt=''
-								className='mx-4 w-10 h-10 object-cover rounded-full hidden sm:block'
-							/>
-							<h4>{author}</h4>
+							<Link
+								className=' mx-1 uppercase text-gray-500 text-sm hover:underline decoration-[#1ecbe1]'
+								href='/blog'
+							>
+								All Posts
+							</Link>
 						</div>
-						<div className='mr-4'>{date}</div>
+					</div>
+					<div className='flex justify-center items-center mt-4'>
+						<h1 className='mb-7 uppercase tracking-[10px] text-gray-500 text-2xl'>
+							{title}
+						</h1>
+					</div>
+				</div>
+				<div className='w-full px-10 py-1 bg-[rgb(36,36,36)] rounded-lg flex flex-col'>
+					<div className='p-4 flex flex-row items-center justify-center'>
+						<Image
+							width='0'
+							height='0'
+							sizes='50vh'
+							src={cover_image}
+							alt={cover_image}
+							className='w-full lg:w-3/4 rounded h-auto items-center justify-center'
+						/>
 					</div>
 
-					<div className='blog-text mt-2 text-grey-500 bg-gray-800'>
-						<div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+					<div className='flex justify-between items-center bg-[rgb(36,36,36)] p-2 my-8 lg:px-48'>
+						<div className='flex items-center'></div>
+						<div className='mr-4 flex flex-row'>
+							<div className='mx-2'>
+								<CategoryLabel>{category}</CategoryLabel>
+							</div>
+							<div className='uppercase text-gray-500 text-sm'>{date}</div>
+						</div>
+					</div>
+
+					<div className='blog-text mt-2 text-grey-300 bg-[rgb(36,36,36)] text-justify px-5 my-5 lg:px-48'>
+						<div
+							className='bg-[rgb(36,36,36)] '
+							dangerouslySetInnerHTML={{ __html: marked(content) }}
+						></div>
 					</div>
 				</div>
 			</div>
