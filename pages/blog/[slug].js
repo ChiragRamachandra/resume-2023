@@ -34,7 +34,7 @@ export default function PostPage({
 						</div>
 					</div>
 					<div className='flex justify-center items-center mt-4'>
-						<h1 className='mb-7 uppercase tracking-[10px] text-gray-500 text-2xl'>
+						<h1 className='mb-7 uppercase tracking-[10px] text-gray-500 text-2xl md:text-4xl'>
 							{title}
 						</h1>
 					</div>

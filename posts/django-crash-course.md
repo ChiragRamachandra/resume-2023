@@ -10,53 +10,246 @@ author_image: 'https://randomuser.me/api/portraits/men/12.jpg'
 
 <!-- Markdown generator - https://jaspervdj.be/lorem-markdownum/ -->
 
-Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
-haec praepes [partes epulae](http://cui.com/), in egisse de. Caecisque ter
-manus. Munere in exhalat, ferre sed [habe quaeque saepe](http://ne.org/fretum)
-verba caput ferarum _nubila_? Patriam Cyparisse tamen, **saxum** fide postponere
-pavida ne omnes etiam, atque. Sonuit omina sed sine haerebat illic fit a mora
-in.
+## What is a Singly Linked List?
 
-1. Serrae enim Etruscam aquis
-2. Et premis et flumine frontem minatur oppressos
-3. Inquam rector Icarus possum vim tumulo propiusque
-4. Vulnus se Latreus
-5. Aptumque bis
+A singly linked list is a linear data structure similar to an array. However, unlike arrays, elements are not stored in a particular memory location or index. Rather each element is a separate object that contains a pointer or a link to the next object in that list.
 
-## Turpius Aegides membris colat volentes fallere
+Each element (commonly called nodes) contains two items: the data stored and a link to the next node. The data can be any valid data type.
 
-Ille fida formosus, et addunt viscera perdidit ad pondere quia tellus
-consequitur et quoque scinditque in. Ratis laborum instabat quaedam partem
-Phoebus, manus _partibus poenas_. Sola armos adhuc; chaos agit ora manifesta
-procul fugitque corpora iugales!
+The entry point to a linked list is called the head. The head is a reference to the first node in the linked list. The last node on the list points to null. If a list is empty, the head is a null reference
 
+The structure would look like this in javascript below:
+
+![Screenshot 2021-01-20 at 11.51.35 AM.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1611123721521/CEm-HdLWY.png align="left")
+
+### Advantages
+
+1. Nodes can easily be removed or added from a singly linked list without reorganising the entire data structure as these nodes don't have an index attached to it, unlike in an array.
+
+### Disadvantage
+
+1. Search is slow in a singly liked list because you have to traverse from the head to the tail.
+2. It uses more memory than arrays because of the storage of the pointers to the next node.
+
+## Implementation in Javascript
+
+Creating a Node:
+
+```plaintext
+class Node {
+  constructor(val) {
+    this.val = val
+    this.next = null
+  }
+
+}
 ```
-Hello World
 
+Creating the function **SinglyLinkedList** with the shell:
+
+```plaintext
+class SinglyLinkedList {
+  constructor() {
+    this.length = 0
+    this.tail = null
+    this.head = null
+  }
+}
 ```
 
-## O contra diu
+Functions to be implemented:
 
-Descendit _auras cum misi_ contactu tenax lacus, **quaerensque invitum
-premuntur** patria. Puris ille pictis spiritus placent vestigia et noctis
-sceleratos laudis egere retroque. Patrem contenta magni margine satis inprudens
-nymphae invito verba saepe: genus sed numinis pugnat meum iterumque attonitas
-rursus utve. Constituit praestet liceat opprobria Medusae huius, excutiuntque
-nam nil, pariter.
+1. push
+2. pop
+3. shift
+4. unshift
+5. get
+6. set
+7. insert
+8. remove
+9. reverse
 
-Coma **laudes manet** ausus hortaturque matrisque Veneris proximus tu iamque
-aptius claudit. Tmolus tetigere iussos animumque quid poplite Hippotaden? Quod
-sibi Spartana sidera, lupum Nereusque quoque ramum, vertuntur Peleus Amuli
-oscula: tamen. Surgere Epidaurius movit crede soceri Euboicam quoque.
+```plaintext
+//Piece of data
+// reference to the next node - next
 
-Unde stabant, acuta, percussit denique; hoc illic et herbis minimas parvum? Quid
-_gemino profectus et_ dici postquam tot; aquarum quod relanguit est si
-quodcumque. Ossaque protinus, quod somno est, repetit, hoc passu est. Qui devia;
-respice humum vobis oscula, in Lotis nymphae.
+class Node {
+  constructor(val) {
+    this.val = val
+    this.next = null
+  }
 
-Dolet certamina velle dexteriore mutatus saepe, tellure ubi unguibus, gestu.
-Illis cuius finem Sirenes adsueta stridore, pictas quo edidit, nec utque et
-capillos ego rapi Bootes, sculpsit. Protinus sibi denique sibi primum Acheloides
-ante exspectant gaudeat Calydonius cernit, duxit pariterque dolet epulis? Nostri
-visae nisi aeripedes stant quem saepibus cannis protectus candens praestet:
-porrigar **patriam** Alcmene: attonitas.
+}
+
+class SinglyLinkedList {
+  constructor() {
+    this.length = 0
+    this.tail = null
+    this.head = null
+  }
+
+  push(val) {
+    let newNode = new Node(val)
+    if (!this.head) {
+      this.head = newNode
+      this.tail = newNode
+    } else {
+      this.tail.next = newNode
+      this.tail = newNode
+    }
+    this.length++
+    return this
+
+
+  }
+
+  //   traverse(){
+  //     let current = this.head
+  //     while(current){
+  //       console.log(current.val)
+  //       current = current.next
+  //     }
+  //   }
+
+  pop() {
+    if (!this.head) {
+      return undefined
+    }
+
+    let current = this.head
+    let newTail = current
+    while (current.next) {
+      newTail = current
+      current = current.next
+
+    }
+    this.tail = newTail
+    this.tail.next = null
+    this.length--
+
+    if (this.length === 0) {
+      this.head = null
+      this.tail = null
+    }
+    return current
+  }
+
+  shift() {
+    if (!this.head) return undefined
+    let currentHead = this.head
+    this.head = currentHead.next
+    this.length--
+    if (this.length === 0) {
+      this.tail = null
+    }
+    return currentHead
+  }
+
+  unshift(val) {
+    var newNode = new Node(val)
+    if (!this.head) {
+      this.head = newNode
+      this.tail = newNode
+    } else {
+      newNode.next = this.head
+      this.head = newNode
+
+    }
+    this.length++
+    return this
+
+  }
+  get(index) {
+    if (index < 0 || index >= this.length) {
+      return null
+    }
+    let counter = 0;
+    let current = this.head;
+    while (counter !== index) {
+      counter++;
+      current = current.next
+
+    }
+    return current
+  }
+
+  set(index, value) {
+    let foundNode = this.get(index);
+    if (foundNode) {
+      foundNode.val = value;
+      return true
+    }
+    return false
+  }
+
+  insert(index, value) {
+    if (index < 0 || index > this.length) return false
+    if (index === this.length) return !!this.push(value);
+    if (index === 0) return !!this.unshift(val);
+
+    let newNode = new Node(value)
+    let prev = this.get(index - 1)
+    let temp = prev.next
+
+    prev.next = newNode
+    newNode.next = temp
+    this.length++
+    return true
+
+  }
+  remove(index) {
+    if (index < 0 || index >= this.length) return undefined
+    if (index === this.length - 1) return this.pop
+    if (index === 0) return this.shift
+
+    let prev = this.get(index - 1)
+    let removed = prev.next
+    prev.next = removed.next
+    this.length--
+
+    return removed
+  }
+
+  reverse() {
+    //swapping head and tail
+    let node = this.head
+    this.head = this.tail
+    this.tail = node
+
+    //new variables used for swapping
+    let prev = null;
+    let next = null;
+
+    for (var i = 0; i < this.length; i++) {
+      next = node.next;
+
+      //one way linkage between
+      node.next = prev;
+
+      //moving the counter
+      prev = node
+      node = next
+    }
+    return this
+  }
+
+  print() {
+    //used to print out as to see things better
+    var arr = [];
+    var current = this.head
+    while (current) {
+      arr.push(current.val)
+      current = current.next
+    }
+    console.log(arr);
+  }
+}
+
+let list = new SinglyLinkedList()
+list.push("20")
+list.push("30")
+list.push("40")
+list.push("50")
+```
+
+%%[rzr-page]
