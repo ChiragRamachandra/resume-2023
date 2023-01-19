@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { PhoneIcon } from '@heroicons/react/24/solid';
+import { SocialIcon } from 'react-social-icons';
+// import { PhoneIcon } from '@heroicons/react/24/solid';
 
 type Props = {};
 
@@ -43,9 +44,16 @@ const Footer = ({}: Props) => {
 			>
 				<div className='flex flex-row'>
 					<p className='uppercase hidden md:inline-flex text-sm text-gray-400 px-4'>
-						+1 647 679 5831
+						<a href='tel:+(1)-647-6795831'>+1 647 679 5831</a>
 					</p>
-					<PhoneIcon className='h-5 w-5 background mr-4 text-gray-400' />
+					<SocialIcon
+						target='_blank'
+						url='https://wa.me/918951831967'
+						fgColor='grey'
+						bgColor='transparent'
+						network='whatsapp'
+					/>
+					{/* <PhoneIcon className='h-5 w-5 background mr-4 text-gray-400' /> */}
 				</div>
 			</motion.div>
 		</footer>

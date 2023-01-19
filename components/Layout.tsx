@@ -1,10 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-
-import { ChevronUpIcon } from '@heroicons/react/24/solid';
-import Link from 'next/link';
+import Header from '../components/HeaderBlog';
 
 type Props = {
 	title?: string;
@@ -25,7 +21,7 @@ const Layout = ({ title, keywords, description, children }: Props) => {
 
 			<Header />
 
-			<section className='h-screen flex flex-col space-y-8 items-center justify-center text-center'>
+			<section className='h-screen flex flex-col space-y-8 items-center justify-center text-center bg-[rgb(36,36,36)]'>
 				{children}
 			</section>
 
@@ -43,7 +39,7 @@ const Layout = ({ title, keywords, description, children }: Props) => {
 };
 Layout.defaultProps = {
 	title: 'Chirag Ramachandra',
-	keywords: 'Software Developer',
+	keywords: 'Fullstack Developer',
 	description: 'Chirag Ramachandra',
 };
 
