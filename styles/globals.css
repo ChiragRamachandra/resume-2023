@@ -24,10 +24,12 @@ ol {
 }
 
 .blog-text pre {
-	background: #f4f4f4;
+	background: #606060;
 	padding: 20px;
 	margin: 20px 0;
 	line-height: 2.3;
+	text-align: justify;
+	color: #ffffff;
 }
 
 .blog-text h1 {
@@ -42,22 +44,24 @@ ol {
 
 /* Fix category colors in production */
 .bg-yellow-600 {
-	background-color: #d97705;
+	background-color: #f7ab0a;
 }
 .bg-blue-600 {
-	background: #3929eb;
+	background: #1ecbe1;
 }
 .bg-green-600 {
-	background-color: #049669;
+	background-color: #03c988;
 }
 .bg-purple-600 {
-	background-color: #7730db;
+	background-color: #00337c;
 }
 .bg-red-600 {
-	background-color: #a70b34;
+	background-color: #fb2576;
 }
 
 /* light blue - #1ecbe1  */
 /* orange - F7AB0A */
 
 /* rgb(36,36,36) - background grey color*/
+
+/* https://colorhunt.co/palettes/dark */

@@ -63,7 +63,7 @@ export default function PostPage({
 
 					<div className='blog-text mt-2 text-grey-300 bg-[rgb(36,36,36)] text-justify px-5 my-5 lg:px-48'>
 						<div
-							className='bg-[rgb(36,36,36)] '
+							className='bg-[rgb(36,36,36)] text-base md:text-lg'
 							dangerouslySetInnerHTML={{ __html: marked(content) }}
 						></div>
 					</div>
