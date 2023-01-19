@@ -1,9 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Skill from './Skill';
+import getSkillsData from 'data/skills';
+
 type Props = {};
 
 const Skills = (props: Props) => {
+	const skills = getSkillsData();
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -14,7 +17,7 @@ const Skills = (props: Props) => {
 		>
 			<h3
 				className='uppercase absolute 
-			tracking-[20px] text-gray-500 text-2xl top-24'
+			tracking-[20px] text-gray-500 text-2xl top-24 mb-4 bottom-4'
 			>
 				Skills
 			</h3>
@@ -22,15 +25,9 @@ const Skills = (props: Props) => {
 				{/* Hover over */}{' '}
 			</h3>
 			<div className='grid grid-cols-4 gap-5 p-1'>
-				<Skill />
-				<Skill />
-				<Skill />
-				<Skill />
-				<Skill />
-				<Skill />
-				<Skill />
-				<Skill />
-				<Skill />
+				{skills.map((skill) => (
+					<Skill key={skill.id} name={skill.name} url={skill.url} />
+				))}
 			</div>
 		</motion.div>
 	);
