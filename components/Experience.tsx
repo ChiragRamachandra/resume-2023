@@ -1,11 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ExperienceCard from './ExperienceCard';
+import getExperienceData from 'data/experience';
 
 type Props = {};
 
 //implement smooth scrolling
 const Experience = (props: Props) => {
+	const experienceData = getExperienceData();
 	return (
 		<motion.div
 			initial={{ x: -200, opacity: 0 }}
@@ -18,10 +20,19 @@ const Experience = (props: Props) => {
 				Experience
 			</h3>
 			<div className='w-full flex space-x-5 overflow-x-scroll p-10 h-50 max-h-50 snap-x snap-mandatory top-24	scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#1ecbe1]/80'>
-				<ExperienceCard />
-				<ExperienceCard />
-				<ExperienceCard />
-				<ExperienceCard />
+				{experienceData.map((experience) => (
+					<ExperienceCard
+						key={experience.id}
+						id={experience.id}
+						imageUrl={experience.imageUrl}
+						title={experience.title}
+						company={experience.company}
+						technologyImages={experience.technologyImages}
+						startDate={experience.startDate}
+						endDate={experience.endDate}
+						experienceBulletPoint={experience.experienceBulletPoint}
+					/>
+				))}
 			</div>
 		</motion.div>
 	);

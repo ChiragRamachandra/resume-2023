@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 import { HomeIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
 
-import { getSocials } from 'data';
+import { getSocialsData } from 'data';
 
 type Props = {};
 
 const Header = ({}: Props) => {
-	const socialLinks = getSocials();
+	const socialLinks = getSocialsData();
 	return (
 		<header className='sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center'>
 			{/* Home Icon */}

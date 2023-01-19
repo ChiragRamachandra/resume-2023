@@ -1,6 +1,6 @@
 import { Socials } from 'types';
 
-const getSocials = (): Socials[] => {
+const getSocialsData = (): Socials[] => {
 	return [
 		{
 			id: 1,
@@ -25,4 +25,4 @@ const getSocials = (): Socials[] => {
 	];
 };
 
-export default getSocials;
+export default getSocialsData;
