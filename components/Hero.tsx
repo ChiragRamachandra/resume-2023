@@ -23,7 +23,7 @@ export default function Hero({}: Props) {
 				priority
 				loading='eager'
 				className='relative rounded-full mx-auto object-cover'
-				src='/images/chirag_ramachandra.jpg'
+				src='/images/profile/chirag_ramachandra.jpg'
 				alt='Picture of the author'
 				width={150}
 				height={150}
