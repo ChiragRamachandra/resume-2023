@@ -106,7 +106,6 @@ class SinglyLinkedList {
   //   traverse(){
   //     let current = this.head
   //     while(current){
-  //       console.log(current.val)
   //       current = current.next
   //     }
   //   }
@@ -241,7 +240,6 @@ class SinglyLinkedList {
       arr.push(current.val)
       current = current.next
     }
-    console.log(arr);
   }
 }
 
