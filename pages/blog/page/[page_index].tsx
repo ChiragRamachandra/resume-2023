@@ -3,12 +3,18 @@ import path from 'path';
 import Layout from '@/components/Layout';
 import Post from '@/components/Post';
 import Pagination from '@/components/Pagination';
-// import CategoryList from '@/components/CategoryList';
 import { POSTS_PER_PAGE } from '@/data/blog';
 import { getPosts } from '@/lib/posts';
+import Posts from 'types/posts';
+import Footer from '@/components/Footer';
 
-// const POSTS_PER_PAGE = 4;
-export default function BlogPage({ posts, numPages, currentPage, categories }) {
+interface BlogPageProps {
+	posts: Posts[];
+	numPages: number;
+	currentPage: number;
+}
+
+const BlogPage = ({ posts, numPages, currentPage }: BlogPageProps) => {
 	return (
 		<Layout>
 			<div className=' h-screen top-24'>
@@ -19,19 +25,23 @@ export default function BlogPage({ posts, numPages, currentPage, categories }) {
 						</h1>
 
 						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 p-4'>
-							{posts.map((post, index) => (
+							{posts.map((post: Posts, index: number) => (
 								<Post key={index} post={post} />
 							))}
 						</div>
 						<div className='flex flex-row items-center justify-center'>
 							<Pagination currentPage={currentPage} numPages={numPages} />
 						</div>
+						<div className='mt-5 top-0'>
+							<Footer />
+						</div>
 					</div>
 				</div>
 			</div>
 		</Layout>
 	);
-}
+};
+export default BlogPage;
 
 export async function getStaticPaths() {
 	const files = fs.readdirSync(path.join('posts'));
@@ -52,16 +62,12 @@ export async function getStaticPaths() {
 	};
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params }: any) {
 	const page = parseInt((params && params.page_index) || 1);
 
 	const files = fs.readdirSync(path.join('posts'));
 
 	const posts = getPosts();
-
-	// Get categories for sidebar
-	const categories = posts.map((post) => post.frontmatter.category);
-	const uniqueCategories = [...new Set(categories)];
 
 	const numPages = Math.ceil(files.length / POSTS_PER_PAGE);
 	const pageIndex = page - 1;
@@ -75,7 +81,6 @@ export async function getStaticProps({ params }) {
 			posts: orderedPosts,
 			numPages,
 			currentPage: page,
-			categories: uniqueCategories,
 		},
 	};
 }

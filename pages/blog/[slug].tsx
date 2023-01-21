@@ -5,13 +5,21 @@ import { marked } from 'marked';
 import Link from 'next/link';
 import Layout from '@/components/Layout';
 import CategoryLabel from '@/components/CategoryLabel';
+import Footer from '@/components/Footer';
 import Image from 'next/image';
+import { Frontmatter } from 'types/posts';
+
+interface PostPage {
+	frontmatter: Frontmatter;
+	content: string;
+	slug: string;
+}
 
 export default function PostPage({
 	frontmatter: { title, category, date, cover_image, author, author_image },
 	content,
 	slug,
-}) {
+}: PostPage) {
 	return (
 		<Layout title={title}>
 			<div className='h-screen items-start'>
@@ -67,6 +75,9 @@ export default function PostPage({
 							dangerouslySetInnerHTML={{ __html: marked(content) }}
 						></div>
 					</div>
+					<div>
+						<Footer />
+					</div>
 				</div>
 			</div>
 		</Layout>
@@ -88,7 +99,7 @@ export async function getStaticPaths() {
 	};
 }
 
-export async function getStaticProps({ params: { slug } }) {
+export async function getStaticProps({ params: { slug } }: any) {
 	const markdownWithMeta = fs.readFileSync(
 		path.join('posts', slug + '.md'),
 		'utf-8'

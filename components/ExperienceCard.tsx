@@ -14,7 +14,7 @@ const ExperienceCard = ({
 	experienceBulletPoint,
 }: Experience) => {
 	return (
-		<div>
+		<div key={id}>
 			<article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[250px] md:w-[300px] xl:w-[700px] 	snap-center  p-2 bg-[#292929] hover:opacity-100 opacity-40	cursor-pointer transition-opacity duration-200 overflow-hidden'>
 				<motion.img
 					initial={{
@@ -29,7 +29,7 @@ const ExperienceCard = ({
 					alt={`${company}-company-logo`}
 				/>
 				<div className='px-0 md:px-8'>
-					<h4 className='text-lg font-bold font-light'>{title}</h4>
+					<h4 className='text-lg font-bold '>{title}</h4>
 					<p className='font-bold text-lg mt-1'>{company}</p>
 					<div className='flex space-x-2 my-2'>
 						{technologyImages.map((technology, idx) => (
