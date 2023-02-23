@@ -23,7 +23,7 @@ export default function PostPage({
 	return (
 		<Layout title={title}>
 			<div className='h-screen items-start'>
-				<div className='w-full px-10 py-4 bg-[rgb(36,36,36)] rounded-lg mt-6'>
+				<div className='w-full px-4 md:px-10 py-4 bg-[rgb(36,36,36)] rounded-lg mt-6'>
 					<div>
 						<div className='flex items-start justify-start p-5'>
 							<Link
@@ -47,7 +47,7 @@ export default function PostPage({
 						</h1>
 					</div>
 				</div>
-				<div className='w-full px-10 py-1 bg-[rgb(36,36,36)] rounded-lg flex flex-col'>
+				<div className='w-full pl-6 pr-7 md:pl-10 md:pr-10 py-1 bg-[rgb(36,36,36)] rounded-lg flex flex-col'>
 					<div className='p-4 flex flex-row items-center justify-center'>
 						<Image
 							width='0'
@@ -69,13 +69,13 @@ export default function PostPage({
 						</div>
 					</div>
 
-					<div className='blog-text mt-2 text-grey-300 bg-[rgb(36,36,36)] text-justify px-5 my-5 lg:px-48'>
+					<div className='blog-text mt-2 text-grey-300 bg-[rgb(36,36,36)] text-justify px-2 md:px-5 my-5 lg:px-48'>
 						<div
 							className='bg-[rgb(36,36,36)] text-base md:text-lg'
 							dangerouslySetInnerHTML={{ __html: marked(content) }}
 						></div>
 					</div>
-					<div>
+					<div className='mt-5 top-0'>
 						<Footer />
 					</div>
 				</div>
