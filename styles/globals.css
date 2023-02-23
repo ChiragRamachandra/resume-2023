@@ -9,6 +9,9 @@
 		transition-all hover:border-[#1ecbe1]/80 hover:text-[#1ecbe1]/80;
 	}
 }
+body {
+	white-space: pre-wrap;
+}
 
 p {
 	margin: 15px 0;
@@ -24,12 +27,21 @@ ol {
 }
 
 .blog-text pre {
-	background: #606060;
 	padding: 20px;
 	margin: 20px 0;
+	background: #606060;
 	line-height: 2.3;
-	text-align: justify;
 	color: #ffffff;
+	text-align: justify;
+	width: auto;
+	height: auto;
+	/* overflow: scroll !important; */
+
+	white-space: pre-wrap;
+	/* white-space: pre-line; */
+	/* white-space: moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap; */
 }
 
 .blog-text h1 {

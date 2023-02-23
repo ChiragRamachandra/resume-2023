@@ -22,8 +22,8 @@ export default function PostPage({
 }: PostPage) {
 	return (
 		<Layout title={title}>
-			<div className='h-screen items-start'>
-				<div className='w-full px-4 md:px-10 py-4 bg-[rgb(36,36,36)] rounded-lg mt-6'>
+			<div className='h-screen items-start break-words'>
+				<div className='w-full px-4 py-4 bg-[rgb(36,36,36)] rounded-lg mt-6'>
 					<div>
 						<div className='flex items-start justify-start p-5'>
 							<Link
@@ -69,12 +69,11 @@ export default function PostPage({
 						</div>
 					</div>
 
-					<div className='blog-text mt-2 text-grey-300 bg-[rgb(36,36,36)] text-justify px-2 md:px-5 my-5 lg:px-48'>
-						<div
-							className='bg-[rgb(36,36,36)] text-base md:text-lg'
-							dangerouslySetInnerHTML={{ __html: marked(content) }}
-						></div>
-					</div>
+					<div
+						className='bg-[rgb(36,36,36)] blog-text text-grey-300 m-2 md:text-lg text-justify'
+						dangerouslySetInnerHTML={{ __html: marked(content) }}
+					></div>
+
 					<div className='mt-5 top-0'>
 						<Footer />
 					</div>
