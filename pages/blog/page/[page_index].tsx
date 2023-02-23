@@ -19,7 +19,7 @@ const BlogPage = ({ posts, numPages, currentPage }: BlogPageProps) => {
 		<Layout>
 			<div className=' h-screen top-24'>
 				<div className='flex justify-between flex-col md:flex-row'>
-					<div className='m-10 text-center'>
+					<div className='m-4 md:m-10 text-center'>
 						<h1 className='text-2xl uppercase text-gray-500 my-5 p-5 tracking-[15px]'>
 							Blog
 						</h1>

@@ -4,7 +4,7 @@ import CategoryLabel from './CategoryLabel';
 
 export default function Post({ post, compact }: any) {
 	return (
-		<div className='w-full px-10 py-6 bg-[rgb(36,36,36)] rounded-lg shadow-sm shadow-gray-900/70 md:shadow-black/80 mt-6 hover:opacity-100 opacity-75 transition-opacity duration-100'>
+		<div className='w-full px-2 md:px-10 py-6 bg-[rgb(36,36,36)] rounded-lg shadow-sm shadow-gray-900/70 md:shadow-black/80 mt-6 hover:opacity-100 opacity-75 transition-opacity duration-100'>
 			{!compact && (
 				<Image
 					src={post.frontmatter.cover_image}
@@ -23,7 +23,7 @@ export default function Post({ post, compact }: any) {
 
 			<div className='mt-2'>
 				<Link href={`/blog/${post.slug}`}>
-					<span className='text-xl text-gray-300 font-bold hover:underline hover:decoration-[#1ecbe1]'>
+					<span className='text-xl text-gray-300 font-bold hover:underline m-2 hover:decoration-[#1ecbe1]'>
 						{post.frontmatter.title}
 					</span>
 				</Link>
