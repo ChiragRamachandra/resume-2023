@@ -20,7 +20,7 @@ const BlogPage = ({ posts, numPages, currentPage }: BlogPageProps) => {
 			<div className=' h-screen top-24'>
 				<div className='flex justify-between flex-col md:flex-row'>
 					<div className='m-4 md:m-10 text-center'>
-						<h1 className='text-2xl uppercase text-gray-500 my-5 p-5 tracking-[15px]'>
+						<h1 className='text-2xl uppercase text-gray-500 my-5 p-2 md:p-5 tracking-[15px]'>
 							Blog
 						</h1>
 
@@ -45,9 +45,7 @@ export default BlogPage;
 
 export async function getStaticPaths() {
 	const files = fs.readdirSync(path.join('posts'));
-
 	const numPages = Math.ceil(files.length / POSTS_PER_PAGE);
-
 	let paths = [];
 
 	for (let i = 1; i <= numPages; i++) {
@@ -64,13 +62,11 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }: any) {
 	const page = parseInt((params && params.page_index) || 1);
-
 	const files = fs.readdirSync(path.join('posts'));
-
 	const posts = getPosts();
-
 	const numPages = Math.ceil(files.length / POSTS_PER_PAGE);
 	const pageIndex = page - 1;
+
 	const orderedPosts = posts.slice(
 		pageIndex * POSTS_PER_PAGE,
 		(pageIndex + 1) * POSTS_PER_PAGE

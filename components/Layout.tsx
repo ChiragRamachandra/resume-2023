@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Header from '../components/HeaderBlog';
+import Footer from './Footer';
 
 type Props = {
 	title?: string;
@@ -25,11 +26,9 @@ const Layout = ({ title, keywords, description, children }: Props) => {
 				{children}
 			</section>
 
-			{/* <section className='snap-end'>
-				<Footer />
-			</section>
+			{/* <Footer /> */}
 
-			<div className='sticky bottom-14 p-3 flex items-end justify-end max-w-7xl mx-auto z-20 '>
+			{/* <div className='sticky bottom-14 p-3 flex items-end justify-end max-w-7xl mx-auto z-20 '>
 				<Link href={'#hero'}>
 					<ChevronUpIcon className='h-10 w-10 background mr-4 text-gray-400' />
 				</Link>

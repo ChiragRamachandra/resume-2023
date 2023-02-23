@@ -7,7 +7,7 @@ type Props = {};
 
 const Footer = ({}: Props) => {
 	return (
-		<footer className='sticky bottom-5 top-0 p-5 flex items-center justify-between max-w-7xl mx-auto z-20 xl:items-center'>
+		<footer className='p-5 flex items-center justify-between max-w-7xl mx-auto z-20 xl:items-center'>
 			<motion.div
 				initial={{
 					x: -500,
