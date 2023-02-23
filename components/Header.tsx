@@ -11,7 +11,7 @@ type Props = {};
 const Header = ({}: Props) => {
 	const socialLinks = getSocialsData();
 	return (
-		<header className='sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center'>
+		<header className='sticky top-0 p-5 flex items-center md:items-start justify-between max-w-7xl mx-auto z-20 xl:items-center'>
 			{/* Home Icon */}
 			<motion.div
 				initial={{

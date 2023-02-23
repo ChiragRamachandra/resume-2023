@@ -10,7 +10,7 @@ const HeaderBlog = (props: Props) => {
 	const socialLinks = getSocialsData();
 	return (
 		<header className='bg-[rgb(36,36,36)] text-gray-100 w-full'>
-			<div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>
+			<div className='container mx-auto flex flex-wrap p-5 flex-row  justify-between items-center'>
 				<Link href='/'>
 					<HomeIcon className='  h-8 w-8 background mr-4 text-gray-400' />
 				</Link>
