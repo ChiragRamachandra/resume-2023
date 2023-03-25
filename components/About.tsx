@@ -12,7 +12,7 @@ const About = (props: Props) => {
 			transition={{ duration: 0.3 }}
 			className='h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl justify-evenly mx-auto items-center p-5'
 		>
-			<div className='my-6'>
+			<div className='my-6 md:hidden'>
 				<h3 className='uppercase tracking-[20px] text-gray-500 text-2xl '>
 					About
 				</h3>
