@@ -15,16 +15,11 @@ const ExperienceCard = ({
 }: Experience) => {
 	return (
 		<div key={id}>
-			<article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[250px] md:w-[300px] xl:w-[700px] 	snap-center  p-2 bg-[#292929] hover:opacity-100 opacity-40	cursor-pointer transition-opacity duration-200 overflow-hidden'>
-				<motion.img
-					initial={{
-						y: -10,
-						opacity: 0,
-					}}
-					transition={{ duration: 1.2 }}
-					whileInView={{ y: 1, opacity: 1 }}
-					viewport={{ once: true }}
-					className='w-12 h-12 rounded-full xl:w-[75px] lg:h-[75px]	object-cover object-center mt-2'
+			<article className='flex flex-col items-center space-y-7 flex-shrink-0 bg-[#292929] opacity-100	cursor-pointer overflow-hidden p-8 '>
+				<Image
+					height={24}
+					width={24}
+					className='w-24 h-24 rounded-full xl:w-[60px] lg:h-[60px]	object-cover object-center mt-2'
 					src={imageUrl}
 					alt={`${company}-company-logo`}
 				/>
@@ -46,7 +41,7 @@ const ExperienceCard = ({
 					<p className='uppercase py-2 text-gray-300'>
 						{`${startDate} - ${endDate}`}
 					</p>
-					<div className='overflow-y-scroll h-48 xl:h-64 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#1ecbe1]/80'>
+					<div className='overflow-y-scroll h-56 xl:h-72 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#1ecbe1]/80'>
 						<ul className='list-disc space-y-1 p-1 text-sm text-justify'>
 							{experienceBulletPoint.map((bulletPoint, idx) => (
 								<li

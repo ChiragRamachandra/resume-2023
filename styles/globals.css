@@ -71,6 +71,32 @@ ol {
 	background-color: #fb2576;
 }
 
+.swiper {
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	/* Center slide text vertically */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	color: #1ecbe1 !important;
+}
+
+.swiper-scrollbar-drag {
+	background-color: #1ecbe1 !important;
+}
+/* .swiper-slide img {
+	display: block;
+	object-fit: cover;
+} */
+
 /* light blue - #1ecbe1  */
 /* orange - F7AB0A */
 

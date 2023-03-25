@@ -12,7 +12,7 @@ import Link from 'next/link';
 
 export default function Home() {
 	return (
-		<div className='bg-[rgb(36,36,36)] text-white h-screen  overflow-y-scroll overflow-x-hidden z-0 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#1ecbe1]/80 '>
+		<div className='bg-[rgb(36,36,36)] text-white h-screen  z-0 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#1ecbe1]/80 '>
 			<Head>
 				<title>Chirag Ramachandra</title>
 				<meta name='description' content='Fullstack developer' />
@@ -41,14 +41,14 @@ export default function Home() {
 				<Projects />
 			</section>
 
-			<div>
-				<Footer />
+			<div className='sticky bottom-14 flex justify-end max-w-7xl mx-auto z-20 '>
+				<Link href={'#hero'}>
+					<ChevronUpIcon className='h-10 w-10 background mr-3 text-gray-400' />
+				</Link>
 			</div>
 
-			<div className='sticky bottom-14 p-3 flex justify-end max-w-7xl mx-auto z-20 '>
-				<Link href={'#hero'}>
-					<ChevronUpIcon className='h-10 w-10 background mr-4 text-gray-400' />
-				</Link>
+			<div>
+				<Footer />
 			</div>
 		</div>
 	);
