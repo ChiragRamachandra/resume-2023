@@ -14,17 +14,19 @@ const Projects = (props: Props) => {
 			whileInView={{ y: 0, opacity: 1 }}
 			viewport={{ once: true }}
 			transition={{ duration: 0.3 }}
-			className='h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0 cursor-pointer'
+			className='h-screen relative flex overflow-hidden flex-col  text-left  max-w-full mx-auto items-center z-0 cursor-pointer'
 		>
-			<h3 className='uppercase absolute tracking-[20px] text-gray-500 text-2xl top-24'>
-				Projects
-			</h3>
+			<div className='my-6'>
+				<h3 className='uppercase tracking-[20px] text-gray-500 text-2xl '>
+					Projects
+				</h3>
+			</div>
 			<div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20  scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#1ecbe1]/80'>
 				{allProjects.map((project) => {
 					return (
 						<div
 							key={project.id}
-							className='w-screen flex-shrink-0 snap-center flex flex-col space-y-4 items-center justify-center p-20 md:p-44 h-screen top-20'
+							className='w-screen flex-shrink-0 snap-center flex flex-col space-y-4 px-4  md:px-4 items-center justify-center  h-screen'
 						>
 							<motion.div
 								initial={{ y: -300, opacity: 0 }}
@@ -39,15 +41,15 @@ const Projects = (props: Props) => {
 									alt={project.name}
 								/>
 							</motion.div>
-							<div className='space-y-10 px-0 md:px-10 max-w-6xl'>
-								<h4 className='text-4xl font-semibold text-center'>
+							<div className='max-w-6xl'>
+								<h4 className='text-2xl md:text-4xl font-semibold text-center'>
 									<span className='underline decoration-[#F7AB0A]/50'>
 										<Link href={project.projectURL} target='_blank'>
-											{project.name}{' '}
+											{project.name}
 										</Link>
 									</span>
 								</h4>
-								<p className='text-lg text-center md:text-left'>
+								<p className='text-sm md:text-base text-justify md:text-left'>
 									{project.summary}
 								</p>
 							</div>
