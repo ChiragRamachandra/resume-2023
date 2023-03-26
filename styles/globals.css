@@ -87,6 +87,7 @@ ol {
 .swiper-button-next,
 .swiper-button-prev {
 	color: #1ecbe1 !important;
+	font-size: 10px !important;
 }
 @media (max-width: 420px) {
 	.swiper-button-next {
@@ -97,9 +98,17 @@ ol {
 	}
 }
 
+@media (max-width: 780px) {
+	.swiper-button-next:after,
+	.swiper-button-prev:after {
+		font-size: 24px !important;
+	}
+}
+
 .swiper-scrollbar-drag {
 	background-color: #1ecbe1 !important;
 }
+
 /* .swiper-slide img {
 	display: block;
 	object-fit: cover;

@@ -27,7 +27,7 @@ const Experience = (props: Props) => {
 				navigation
 				scrollbar={{ draggable: true }}
 				breakpointsBase='window'
-				breakpoints={{ 420: { slidesPerView: 2 }, 780: { slidesPerView: 3 } }}
+				breakpoints={{ 420: { slidesPerView: 2 }, 1280: { slidesPerView: 3 } }}
 			>
 				{experienceData.map((experience) => (
 					<SwiperSlide
