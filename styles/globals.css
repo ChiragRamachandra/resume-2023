@@ -31,13 +31,13 @@ ol {
 }
 
 .blog-text pre {
+	padding: 10px;
 	background: #606060;
 	color: #ffffff;
-	width: 80vw;
-	height: 40vw;
+	width: 85vw;
 	overflow-x: auto;
-	overflow-y: hidden;
-	white-space: nowrap;
+	overflow-y: auto;
+	/* white-space: nowrap; */
 	/* word-wrap: normal; */
 
 	/* overflow: scroll !important; */
