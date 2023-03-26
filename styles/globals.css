@@ -9,35 +9,40 @@
 		transition-all hover:border-[#1ecbe1]/80 hover:text-[#1ecbe1]/80;
 	}
 }
-body {
-	white-space: pre-wrap;
+.header,
+.footer {
+	overflow: hidden;
+	position: fixed;
+}
+.page-content {
+	overflow: auto;
 }
 
-p {
-	margin: 15px 0;
-	line-height: 1.8;
+.blogTopLevel {
+	display: block;
+	word-wrap: break-word;
+	overflow: hidden;
+	white-space: pre-line;
 }
 
 .blog-text ul,
 ol {
-	font-size: 110%;
-	line-height: 2.3;
 	font-weight: bold;
-	margin: 10px 0;
 }
 
 .blog-text pre {
-	padding: 20px;
-	margin: 20px 0;
 	background: #606060;
-	line-height: 2.3;
 	color: #ffffff;
-	text-align: justify;
-	width: auto;
-	height: auto;
+	width: 80vw;
+	height: 40vw;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	/* word-wrap: normal; */
+
 	/* overflow: scroll !important; */
 
-	white-space: pre-wrap;
+	/* white-space: pre-wrap; */
 	/* white-space: pre-line; */
 	/* white-space: moz-pre-wrap;
 	white-space: -pre-wrap;
@@ -45,13 +50,13 @@ ol {
 }
 
 .blog-text h1 {
-	font-size: 35px;
+	font-size: 36px;
 }
 
 .blog-text h2,
 .blog-text h3,
 .blog-text h4 {
-	font-size: 27px;
+	font-size: 26px;
 }
 
 /* Fix category colors in production */

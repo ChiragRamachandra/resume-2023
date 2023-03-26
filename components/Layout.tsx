@@ -12,7 +12,7 @@ type Props = {
 
 const Layout = ({ title, keywords, description, children }: Props) => {
 	return (
-		<div className='bg-[rgb(36,36,36)] text-white h-screen  overflow-y-scroll overflow-x-hidden z-0 scrollbar-thin md:scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#1ecbe1]/80'>
+		<div className='bg-[rgb(36,36,36)] text-white h-screen  z-0 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#1ecbe1]/80'>
 			<Head>
 				<title>{title}</title>
 				<meta name='keywords' content={keywords} />
@@ -22,7 +22,7 @@ const Layout = ({ title, keywords, description, children }: Props) => {
 
 			<Header />
 
-			<section className='h-screen flex flex-col space-y-8 items-center justify-center text-center bg-[rgb(36,36,36)]'>
+			<section className='flex flex-col space-y-8 items-center justify-center text-center'>
 				{children}
 			</section>
 

@@ -22,8 +22,9 @@ export default function PostPage({
 }: PostPage) {
 	return (
 		<Layout title={title}>
-			<div className='h-screen items-start break-words'>
-				<div className='w-full px-4 py-4 bg-[rgb(36,36,36)] rounded-lg mt-6'>
+			<div>
+				<div className='px-4 py-4 mt-6'>
+					{/* BREADCRUMB */}
 					<div>
 						<div className='flex items-start justify-start p-5'>
 							<Link
@@ -41,40 +42,38 @@ export default function PostPage({
 							</Link>
 						</div>
 					</div>
-					<div className='flex justify-center items-center mt-4'>
-						<h1 className='mb-7 uppercase tracking-[10px] text-gray-500 text-2xl md:text-4xl'>
-							{title}
-						</h1>
+				</div>
+
+				<div className='flex justify-center items-center mt-4'>
+					<h1 className='mb-7 uppercase tracking-[10px] text-gray-500 text-2xl md:text-4xl'>
+						{title}
+					</h1>
+				</div>
+
+				<div className='flex flex-row  items-center justify-center'>
+					<Image
+						width='40'
+						height='40'
+						sizes='50vh'
+						src={cover_image}
+						alt={cover_image}
+						className='w-4/5 h-4/5 lg:w-3/4 lg:h-3/4 rounded items-center justify-center'
+					/>
+				</div>
+
+				<div className='flex flex-col pl-6 pr-7 md:pl-10 md:pr-10 py-1'>
+					<div className='flex flex-row justify-end items-center p-4 '>
+						<div className='uppercase text-gray-500 text-sm'>{date}</div>
 					</div>
 				</div>
-				<div className='w-full pl-6 pr-7 md:pl-10 md:pr-10 py-1 bg-[rgb(36,36,36)] rounded-lg flex flex-col'>
-					<div className='p-4 flex flex-row items-center justify-center'>
-						<Image
-							width='0'
-							height='0'
-							sizes='50vh'
-							src={cover_image}
-							alt={cover_image}
-							className='w-full lg:w-3/4 rounded h-auto items-center justify-center'
-						/>
-					</div>
 
-					<div className='flex justify-between items-center bg-[rgb(36,36,36)] p-2 my-8 lg:px-48'>
-						<div className='flex items-center'></div>
-						<div className='mr-4 flex flex-row'>
-							<div className='mx-2'>
-								<CategoryLabel>{category}</CategoryLabel>
-							</div>
-							<div className='uppercase text-gray-500 text-sm'>{date}</div>
-						</div>
-					</div>
-
+				<div className='flex flex-col pl-6 pr-7 md:pl-10 md:pr-10 py-1 blogTopLevel'>
 					<div
-						className='bg-[rgb(36,36,36)] blog-text text-grey-300 m-2 md:text-lg text-justify'
+						className='blog-text text-grey-300 m-2 md:text-lg text-justify'
 						dangerouslySetInnerHTML={{ __html: marked(content) }}
 					></div>
 
-					<div className='mt-5 top-0'>
+					<div className='mt-5'>
 						<Footer />
 					</div>
 				</div>

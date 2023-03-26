@@ -18,7 +18,7 @@ export default function Post({ post, compact }: any) {
 				<span className='font-light text-gray-300'>
 					{post.frontmatter.date}
 				</span>
-				<CategoryLabel>{post.frontmatter.category}</CategoryLabel>
+				{/* <CategoryLabel>{post.frontmatter.category}</CategoryLabel> */}
 			</div>
 
 			<div className='mt-2'>
