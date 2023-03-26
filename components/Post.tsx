@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import CategoryLabel from './CategoryLabel';
 
 export default function Post({ post, compact }: any) {
 	return (
@@ -18,7 +17,6 @@ export default function Post({ post, compact }: any) {
 				<span className='font-light text-gray-300'>
 					{post.frontmatter.date}
 				</span>
-				{/* <CategoryLabel>{post.frontmatter.category}</CategoryLabel> */}
 			</div>
 
 			<div className='mt-2'>
@@ -34,7 +32,6 @@ export default function Post({ post, compact }: any) {
 
 			{!compact && (
 				<div className='flex justify-between items-center mt-6'>
-					<div>{/* left corner if needed */}</div>
 					<div className='flex items-center'>
 						<Link href={`/blog/${post.slug}`}>
 							<button className='heroButton'>Read More</button>

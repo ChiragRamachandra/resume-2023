@@ -37,16 +37,6 @@ ol {
 	width: 85vw;
 	overflow-x: auto;
 	overflow-y: auto;
-	/* white-space: nowrap; */
-	/* word-wrap: normal; */
-
-	/* overflow: scroll !important; */
-
-	/* white-space: pre-wrap; */
-	/* white-space: pre-line; */
-	/* white-space: moz-pre-wrap;
-	white-space: -pre-wrap;
-	white-space: -o-pre-wrap; */
 }
 
 .blog-text h1 {
@@ -113,11 +103,6 @@ ol {
 .swiper-scrollbar-drag {
 	background-color: #1ecbe1 !important;
 }
-
-/* .swiper-slide img {
-	display: block;
-	object-fit: cover;
-} */
 
 /* light blue - #1ecbe1  */
 /* orange - F7AB0A */
