@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import ExperienceCard from './ExperienceCard';
 import getExperienceData from 'data/experience';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';

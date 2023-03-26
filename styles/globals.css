@@ -88,6 +88,14 @@ ol {
 .swiper-button-prev {
 	color: #1ecbe1 !important;
 }
+@media (max-width: 420px) {
+	.swiper-button-next {
+		padding-left: 24px;
+	}
+	.swiper-button-prev {
+		padding-right: 24px;
+	}
+}
 
 .swiper-scrollbar-drag {
 	background-color: #1ecbe1 !important;
