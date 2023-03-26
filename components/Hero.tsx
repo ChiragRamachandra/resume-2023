@@ -15,7 +15,7 @@ export default function Hero({}: Props) {
 	});
 	return (
 		<div
-			className='h-screen flex flex-col space-y-8 
+			className='h-screen flex flex-col  
 		items-center justify-center text-center overflow-hidden'
 		>
 			<BackgroundCircles />

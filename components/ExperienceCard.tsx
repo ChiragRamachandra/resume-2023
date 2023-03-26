@@ -19,13 +19,15 @@ const ExperienceCard = ({
 				<Image
 					height={24}
 					width={24}
-					className='w-24 h-24 rounded-full xl:w-[60px] lg:h-[60px]	object-cover object-center mt-2'
+					className='w-24 h-24 rounded-full xl:w-[60px] xl:h-[60px]	object-cover object-center mt-2'
 					src={imageUrl}
 					alt={`${company}-company-logo`}
 				/>
 				<div className='px-0 md:px-8'>
-					<h4 className='text-lg font-bold '>{title}</h4>
-					<p className='font-bold text-lg mt-1'>{company}</p>
+					<h4 className='text-lg font-bold whitespace-pre-wrap'>{title}</h4>
+					<p className='font-bold text-lg mt-1 whitespace-pre-wrap'>
+						{company}
+					</p>
 					<div className='flex space-x-2 my-2'>
 						{technologyImages.map((technology, idx) => (
 							<Image
@@ -45,7 +47,7 @@ const ExperienceCard = ({
 						<ul className='list-disc space-y-1 p-1 text-sm text-justify'>
 							{experienceBulletPoint.map((bulletPoint, idx) => (
 								<li
-									className='p-1 list-disc space-y-1 text-sm text-justify mx-3'
+									className='p-1 list-disc space-y-1 text-sm text-justify mx-3 whitespace-pre-wrap'
 									key={idx}
 								>
 									{bulletPoint}
