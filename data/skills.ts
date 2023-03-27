@@ -3,29 +3,24 @@ import { Skills } from 'types';
 const getSkillsData = (): Skills[] => {
 	return [
 		{
-			id: 15,
+			id: 1,
 			name: 'TS',
 			url: '/images/technology/ts_logo.png',
 		},
 		{
-			id: 1,
+			id: 2,
 			name: 'AWS',
 			url: '/images/technology/aws_logo.jpeg',
 		},
 		{
-			id: 2,
+			id: 3,
 			name: 'CSS',
 			url: '/images/technology/css_logo.png',
 		},
 		{
-			id: 3,
+			id: 4,
 			name: 'Cypress',
 			url: '/images/technology/cypress_logo.png',
-		},
-		{
-			id: 4,
-			name: 'Express',
-			url: '/images/technology/expressjs_logo.png',
 		},
 		{
 			id: 5,

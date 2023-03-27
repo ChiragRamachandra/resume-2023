@@ -29,7 +29,6 @@ const getExperienceData = (): Experience[] => {
 			technologyImages: [
 				'/images/technology/ts_logo.png',
 				'/images/technology/cypress_logo.png',
-				'/images/technology/expressjs_logo.png',
 				'/images/technology/mysql_logo.png',
 				'/images/technology/aws_logo.jpeg',
 			],
@@ -49,7 +48,6 @@ const getExperienceData = (): Experience[] => {
 			technologyImages: [
 				'/images/technology/html_logo.png',
 				'/images/technology/react_logo.png',
-				'/images/technology/expressjs_logo.png',
 				'/images/technology/mysql_logo.png',
 				'/images/technology/mongodb_logo.png',
 			],
