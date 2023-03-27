@@ -10,8 +10,8 @@ const Skill = ({ name, url }: Props) => {
 	return (
 		<div className='group relative flex cursor-pointer top-5'>
 			<Image
-				width={24}
-				height={24}
+				width={100}
+				height={100}
 				src={url}
 				alt={name}
 				className='rounded-2xl border border-gray-500	object-cover 

@@ -16,8 +16,8 @@ const ExperienceCard = ({
 		<div key={id}>
 			<article className='flex flex-col items-center space-y-7 flex-shrink-0 bg-[#292929] opacity-100	cursor-pointer overflow-hidden p-8 '>
 				<Image
-					height={24}
-					width={24}
+					height={200}
+					width={200}
 					className='w-24 h-24 rounded-full xl:w-[60px] xl:h-[60px]	object-cover object-center mt-2'
 					src={imageUrl}
 					alt={`${company}-company-logo`}
@@ -31,8 +31,8 @@ const ExperienceCard = ({
 						{technologyImages.map((technology, idx) => (
 							<Image
 								key={idx}
-								height={10}
-								width={10}
+								height={40}
+								width={40}
 								src={technology}
 								alt='language'
 								className='h-4 w-4'
