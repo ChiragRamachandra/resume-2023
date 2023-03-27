@@ -47,9 +47,7 @@ export default function Home() {
 				</Link>
 			</div>
 
-			<div>
-				<Footer />
-			</div>
+			<Footer />
 		</div>
 	);
 }
