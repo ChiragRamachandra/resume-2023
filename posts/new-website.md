@@ -1,16 +1,21 @@
 ---
-title: 'Tailwin vs Bootstrap'
-date: 'May 5, 2021'
-excerpt: 'Both Tailwind and Bootstrap are very popular CSS frameworks. In this article, we will compare them'
-cover_image: '/images/posts/img2.jpg'
-category: 'CSS'
-author: 'Jane Doe'
-author_image: 'https://randomuser.me/api/portraits/women/11.jpg'
+title: 'New Website. But why ?'
+date: 'Mar 27, 2023'
+excerpt: 'How I built my new website'
+cover_image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643'
+category: 'JavaScript'
+author: 'Chirag Ramachandra'
+author_image: 'http://1.gravatar.com/avatar/13ed42fe81958754e88d2189dea6fdc7'
 ---
 
 <!-- Markdown generator - https://jaspervdj.be/lorem-markdownum/ -->
 
-lorem ipasdasjduah adkjs jhfvjh
+Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
+haec praepes [partes epulae](http://cui.com/), in egisse de. Caecisque ter
+manus. Munere in exhalat, ferre sed [habe quaeque saepe](http://ne.org/fretum)
+verba caput ferarum _nubila_? Patriam Cyparisse tamen, **saxum** fide postponere
+pavida ne omnes etiam, atque. Sonuit omina sed sine haerebat illic fit a mora
+in.
 
 1. Serrae enim Etruscam aquis
 2. Et premis et flumine frontem minatur oppressos
@@ -26,7 +31,28 @@ Phoebus, manus _partibus poenas_. Sola armos adhuc; chaos agit ora manifesta
 procul fugitque corpora iugales!
 
 ```
-Hello QWorl
+<div className=' h-screen top-24'>
+				<div className='flex justify-between flex-col md:flex-row'>
+					<div className='m-4 md:m-10 text-center'>
+						<h1 className='text-2xl uppercase text-gray-500 my-5 p-2 md:p-5 tracking-[15px]'>
+							Blog
+						</h1>
+
+						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 p-4'>
+							{posts.map((post: Posts, index: number) => (
+								<Post key={index} post={post} />
+							))}
+						</div>
+						<div className='flex flex-row items-center justify-center'>
+							<Pagination currentPage={currentPage} numPages={numPages} />
+						</div>
+						<div className='mt-5 top-0'>
+							<Footer />
+						</div>
+					</div>
+				</div>
+			</div>
+</div>
 ```
 
 ## O contra diu
