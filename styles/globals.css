@@ -28,6 +28,7 @@
 .blog-text ul,
 ol {
 	font-weight: bold;
+	list-style-type: square;
 }
 
 .blog-text pre {
