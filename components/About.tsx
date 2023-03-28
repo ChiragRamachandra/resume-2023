@@ -29,18 +29,16 @@ const About = (props: Props) => {
 						A <span className='text-[#1ecbe1]'>little</span> bit about me.
 					</h4>
 					<p className='text-sm md:text-base text-justify'>
-						I am a Full Stack Developer, currently working with Getty Images. I
-						enjoy building things and bringing ideas to life. I am equipped with
-						the right skills to help you with your next project, let&apos;s
-						create together.
+						I am a Full Stack Developer currently employed at Getty Images,
+						passionate about transforming ideas into functional products. With a
+						wide range of skills and expertise, I am equipped to help bring your
+						next project to life.
 					</p>
 					<p className='text-sm md:text-base text-justify'>
-						I believe in working smart and not reinventing the wheel, which
-						leads me to work with a multitude of 3rd party tools/ APIs which are
-						integrated into the web application. While working, I tend to
-						implement principles of project management to properly allocate
-						resources, manage time and expectations and deliver a high quality
-						product!
+						My approach is to work smart and leverage existing tools and APIs to
+						save time and effort. Throughout my projects, I incorporate agile
+						principles to effectively manage timelines and expectations, and
+						deliver high-quality results.
 					</p>
 				</div>
 			</div>

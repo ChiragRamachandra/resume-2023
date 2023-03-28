@@ -17,8 +17,7 @@ const getExperienceData = (): Experience[] => {
 			startDate: 'May 2022',
 			endDate: 'Till Date',
 			experienceBulletPoint: [
-				'Leading the end to end customer experience track',
-				'worked on migration from google UA to GA4',
+				'As a Senior Software Engineer at Getty Images, I lead the end-to-end customer experience track, ensuring that every aspect of our customers interactions with our products is seamless and enjoyable. In addition, I have successfully managed the migration from Google Universal Analytics to GA4, allowing us to better track user behavior and provide valuable insights for continued improvements.',
 			],
 		},
 		{
@@ -35,9 +34,7 @@ const getExperienceData = (): Experience[] => {
 			startDate: 'March 2018',
 			endDate: 'March 2022',
 			experienceBulletPoint: [
-				'Leading the technical vision, strategy and architecture that ensures business requirements are met and includes scalability',
-				'Responsible for complete technology stack, including prototype, build, deployment and testing of CollegePass Technology Solutions, which is an Ed Tech Start Up (https://www.collegepass.org/)',
-				'Designed and developed user-friendly website, including optimized video platform integration using LAMP, MERN & Python, continue to optimize website by applying enhancements to improve functionality and speed and generated increase of 30% jump in subscriber base month over month',
+				'As the Principal Tech Architect at CollegePass, I led the development of a user-friendly website by integrating video platforms using LAMP, MERN, and Python. I was responsible for the complete technology stack, and among other things my efforts resulted in a 30% monthly increase in subscribers, demonstrating my ability to design and execute a technical vision and strategy that meets business requirements and includes scalability',
 			],
 		},
 		{
@@ -54,10 +51,7 @@ const getExperienceData = (): Experience[] => {
 			startDate: 'Oct 2016',
 			endDate: 'March 2018',
 			experienceBulletPoint: [
-				'Customer Experience (CeP) improvement: Built a new portal for end users to view the account, billing and other relevant details',
-				'Code Deployment to production environment and Post production PRISM support',
-				'Preparing/ Updating of HLD, LLD and SSD’s with UAT and other project documentation',
-				'Involved in Requirements gathering, tracking daily activities, providing work assignment, delegation of work, mentor new joiners and other updates',
+				'As a Software Engineer at Accenture, I successfully executed several critical projects. I led the implementation of Legacy Migration for United Utilities, migrating the WM codebase from version 8.0 to version 9.8 while ensuring compliance with SOA principles. I also improved Customer Experience by developing a new portal for end-users to access their accounts and billing details.',
 			],
 		},
 		{
@@ -74,10 +68,7 @@ const getExperienceData = (): Experience[] => {
 			startDate: 'March 2014',
 			endDate: 'Oct 2016',
 			experienceBulletPoint: [
-				'Implemented Merchant Account Maintenance aimed at providing a single stop solution for retrieving all details relevant to a given chain, merchant or store',
-				'Worked on Self Registration feature, which enables the merchants of the client (Vantiv) to set up their shop by enabling them to create their organization and multiple users',
-				'Preparing/ Updating of HLD, LLD and SSD’s with UAT and other project documentation',
-				'Exercised Operational skills in estimation, requirement analysis, delivery and deployment and end user training',
+				'During my time as a Systems Engineer at TCS, I was instrumental in implementing several key APIs aimed at streamlining business processes. I developed a Merchant Account Maintenance API that provided a centralized solution. I also played an essential role in code deployment, post-production support, and exercising operational skills in estimation, requirement analysis, delivery, and end-user training.',
 			],
 		},
 	];

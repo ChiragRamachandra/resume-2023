@@ -42,17 +42,15 @@ const ExperienceCard = ({
 					<p className='uppercase py-2 text-gray-300'>
 						{`${startDate} - ${endDate}`}
 					</p>
-					<div className='overflow-y-scroll h-56 xl:h-72 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#1ecbe1]/80'>
-						<ul className='list-disc space-y-1 p-1 text-sm text-justify'>
-							{experienceBulletPoint.map((bulletPoint, idx) => (
-								<li
-									className='p-1 list-disc space-y-1 text-sm text-justify mx-3 whitespace-pre-wrap'
-									key={idx}
-								>
-									{bulletPoint}
-								</li>
-							))}
-						</ul>
+					<div className='overflow-y-scroll h-60 xl:h-76 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#1ecbe1]/80'>
+						{experienceBulletPoint.map((bulletPoint, idx) => (
+							<p
+								className='p-1 space-y-1 text-sm text-justify mr-3 whitespace-pre-wrap'
+								key={idx}
+							>
+								{bulletPoint}
+							</p>
+						))}
 					</div>
 				</div>
 			</article>
