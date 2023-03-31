@@ -1,5 +1,5 @@
 ---
-title: 'New Website. But why ?'
+title: 'Why did I build this website?'
 date: 'Mar 27, 2023'
 excerpt: 'How I built my new website'
 cover_image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643'
@@ -8,75 +8,36 @@ author: 'Chirag Ramachandra'
 author_image: 'http://1.gravatar.com/avatar/13ed42fe81958754e88d2189dea6fdc7'
 ---
 
-<!-- Markdown generator - https://jaspervdj.be/lorem-markdownum/ -->
+# Why did I build this website?
 
-Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
-haec praepes [partes epulae](http://cui.com/), in egisse de. Caecisque ter
-manus. Munere in exhalat, ferre sed [habe quaeque saepe](http://ne.org/fretum)
-verba caput ferarum _nubila_? Patriam Cyparisse tamen, **saxum** fide postponere
-pavida ne omnes etiam, atque. Sonuit omina sed sine haerebat illic fit a mora
-in.
+I mean I already had a [website](www.chiragr.com), but it was kinda old and also it had a bright theme, forget about others even when I opened I had to go and reduce the brightness of my phone/laptop.
 
-1. Serrae enim Etruscam aquis
-2. Et premis et flumine frontem minatur oppressos
-3. Inquam rector Icarus possum vim tumulo propiusque
-4. Vulnus se Latreus
-5. Aptumque bis
+The other problem also was when I started my old website it was meant to be a simple portfolio website, but sometime after that I thought, it would be kinda cool to have a blog of my own, and then I found a hack: [Hashnode](www.hashnode.com) has a pretty cool interface to write my blogs. But the problem was, it still looked disconnected from my primary portfolio website. I just let it be for the time being but always wanted to have a simple platform that served as a one-stop solution which did not look disconnected.
 
-## Turpius Aegides membris colat volentes fallere
+Last but not the least, I wanted to open-source my projects. Trust me, this is a very difficult thing for me to do, mostly because I am almost a self-taught programmer without a mentor (maybe the instructors on youtube and Udemy were my virtual mentor) and I am super scared to kind of put things in public where I feel people would judge me. More than that, I also wanted the entire source code to be available for anyone to use and reproduce. This particular ask made it a bit difficult to pick a tool (I mean, at this point, I mostly write on JS/TS), I had heard great things about headless cms, but that would also mean I had to put it up on some cloud provider and there still could be ambiguity about is it actually what I see is what I get, so dropped that idea, other popular tools like Hashnode, WordPress, etc also had to be discarded for similar reasons that's when I taught of using a simple markdown, I know that this might not scale, but this is purely for me and I am probably not gonna write thousands of blog in the next couple of years.
 
-Ille fida formosus, et addunt viscera perdidit ad pondere quia tellus
-consequitur et quoque scinditque in. Ratis laborum instabat quaedam partem
-Phoebus, manus _partibus poenas_. Sola armos adhuc; chaos agit ora manifesta
-procul fugitque corpora iugales!
+## How did I get started?
 
-```
-<div className=' h-screen top-24'>
-				<div className='flex justify-between flex-col md:flex-row'>
-					<div className='m-4 md:m-10 text-center'>
-						<h1 className='text-2xl uppercase text-gray-500 my-5 p-2 md:p-5 tracking-[15px]'>
-							Blog
-						</h1>
+I saw this brilliant video from Sonny Sangha, on how easy it is to actually get started and build a website. I was like, you know what, if I am anyway going to make this open source, why not demonstrate how easy it is to get started in 2023? so I used this particular video as the base for my entire project.
 
-						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 p-4'>
-							{posts.map((post: Posts, index: number) => (
-								<Post key={index} post={post} />
-							))}
-						</div>
-						<div className='flex flex-row items-center justify-center'>
-							<Pagination currentPage={currentPage} numPages={numPages} />
-						</div>
-						<div className='mt-5 top-0'>
-							<Footer />
-						</div>
-					</div>
-				</div>
-			</div>
+<div class="youtube-wrapper">
+  <iframe src="https://www.youtube.com/embed/urgi2iz9P6U" allowfullscreen></iframe>
 </div>
-```
 
-## O contra diu
+### But this does not have anything about the blog.
 
-Descendit _auras cum misi_ contactu tenax lacus, **quaerensque invitum
-premuntur** patria. Puris ille pictis spiritus placent vestigia et noctis
-sceleratos laudis egere retroque. Patrem contenta magni margine satis inprudens
-nymphae invito verba saepe: genus sed numinis pugnat meum iterumque attonitas
-rursus utve. Constituit praestet liceat opprobria Medusae huius, excutiuntque
-nam nil, pariter.
+Simple, I found [this course](https://www.udemy.com/course/nextjs-dev-to-deployment/) on Udemy by Brad Traversy, which has the entire source code also available. So voila, I mixed and matched. Used some better sliders, instead of redoing from scratch and we have the blog.
 
-Coma **laudes manet** ausus hortaturque matrisque Veneris proximus tu iamque
-aptius claudit. Tmolus tetigere iussos animumque quid poplite Hippotaden? Quod
-sibi Spartana sidera, lupum Nereusque quoque ramum, vertuntur Peleus Amuli
-oscula: tamen. Surgere Epidaurius movit crede soceri Euboicam quoque.
+The entire source code for this project can be found in my [github](https://github.com/chiragramachandra) [Here](https://github.com/ChiragRamachandra/resume-2023).
 
-Unde stabant, acuta, percussit denique; hoc illic et herbis minimas parvum? Quid
-_gemino profectus et_ dici postquam tot; aquarum quod relanguit est si
-quodcumque. Ossaque protinus, quod somno est, repetit, hoc passu est. Qui devia;
-respice humum vobis oscula, in Lotis nymphae.
+## What next?
 
-Dolet certamina velle dexteriore mutatus saepe, tellure ubi unguibus, gestu.
-Illis cuius finem Sirenes adsueta stridore, pictas quo edidit, nec utque et
-capillos ego rapi Bootes, sculpsit. Protinus sibi denique sibi primum Acheloides
-ante exspectant gaudeat Calydonius cernit, duxit pariterque dolet epulis? Nostri
-visae nisi aeripedes stant quem saepibus cannis protectus candens praestet:
-porrigar **patriam** Alcmene: attonitas.
+I plan to at least write one blog a week, I procrastinate a lot, so I am not sure if I will be able to keep up with it, but I promise to try. I also will try to use the same repo to build things, for example, I have not added any testing to the whole blog, and I want to bring that out as an article.
+Will make a blog about SEO, performance, and other metrics. I mean the whole idea is to kinda show someone who is starting how easy it is to actually get better with web development in 2023.
+
+I am also planning to branch out into mobile development and a couple of other super interesting projects this year, I'll promise to try and capture all of the above in this blog.
+
+## Conclusion
+
+Why is the grammar so bad? Generally, I proof-read most of the things I write, but this time I do want to keep it basic and not worry too much about grammar. Apologies, if this is something that antagonizes you, I am hoping that this exercise will also kind of help me to organize my thoughts better as I go.
+Here is a cheat sheet if anyone is interested in markdown [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
