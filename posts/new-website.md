@@ -1,7 +1,7 @@
 ---
 title: 'Why did I build this website?'
 date: 'Mar 27, 2023'
-excerpt: 'How I built my new website'
+excerpt: 'Why I built this website, how I built my new website, what do I intend to do with and what can you expect.'
 cover_image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643'
 category: 'JavaScript'
 author: 'Chirag Ramachandra'
