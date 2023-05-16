@@ -31,6 +31,11 @@ ol {
 	list-style-type: square;
 }
 
+a {
+	color: #f7ab0a;
+	text-decoration: underline;
+}
+
 .blog-text pre {
 	padding: 10px;
 	background: #606060;
