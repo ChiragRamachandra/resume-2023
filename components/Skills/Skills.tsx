@@ -1,5 +1,5 @@
 import React from 'react';
-import Skill from './Skill';
+import { Skill } from '../Skill';
 import getSkillsData from 'data/skills';
 
 type Props = {};

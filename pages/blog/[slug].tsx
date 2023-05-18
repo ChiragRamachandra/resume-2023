@@ -3,8 +3,8 @@ import path from 'path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
 import Link from 'next/link';
-import Layout from '@/components/Layout';
-import Footer from '@/components/Footer';
+import { Layout } from '@/components/Layout';
+import { Footer } from '@/components/Footer';
 import Image from 'next/image';
 import { Frontmatter } from 'types/posts';
 

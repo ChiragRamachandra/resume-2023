@@ -1,8 +1,8 @@
 import fs from 'fs';
 import path from 'path';
-import Layout from '@/components/Layout';
-import Post from '@/components/Post';
-import Footer from '@/components/Footer';
+import { Layout } from '@/components/Layout';
+import { Post } from '@/components/Post';
+import { Footer } from '@/components/Footer';
 import matter from 'gray-matter';
 import { getPosts } from '@/lib/posts';
 import Posts from 'types/posts';

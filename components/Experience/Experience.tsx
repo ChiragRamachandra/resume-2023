@@ -1,5 +1,5 @@
 import React from 'react';
-import ExperienceCard from './ExperienceCard';
+import { ExperienceCard } from '../ExperienceCard';
 import getExperienceData from 'data/experience';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';

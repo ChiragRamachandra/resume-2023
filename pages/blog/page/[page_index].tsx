@@ -1,12 +1,12 @@
 import fs from 'fs';
 import path from 'path';
-import Layout from '@/components/Layout';
-import Post from '@/components/Post';
-import Pagination from '@/components/Pagination';
+import { Layout } from '@/components/Layout';
+import { Post } from '@/components/Post';
+import { Pagination } from '@/components/Pagination';
 import { POSTS_PER_PAGE } from '@/data/blog';
 import { getPosts } from '@/lib/posts';
 import Posts from 'types/posts';
-import Footer from '@/components/Footer';
+import { Footer } from '@/components/Footer';
 
 interface BlogPageProps {
 	posts: Posts[];

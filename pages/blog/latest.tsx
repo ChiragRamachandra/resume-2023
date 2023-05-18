@@ -1,6 +1,6 @@
-import Layout from '../../components/Layout';
+import { Layout } from '../../components/Layout';
 import { getPosts } from '@/lib/posts';
-import Post from '@/components/Post';
+import { Post } from '@/components/Post';
 
 type Props = Array<BlogPosts>;
 
