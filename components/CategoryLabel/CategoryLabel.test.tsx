@@ -4,6 +4,6 @@ import '@testing-library/jest-dom';
 
 describe('CategoryLabel', () => {
 	it('renders CategoryLabel', () => {
-		render(<CategoryLabel />);
+		render(<CategoryLabel> Category</CategoryLabel>);
 	});
 });

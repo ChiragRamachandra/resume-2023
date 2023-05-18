@@ -7,10 +7,10 @@ describe('ExperienceCard', () => {
 		render(
 			<ExperienceCard
 				id={123}
-				imageUrl={'fake/path'}
+				imageUrl={'/images/experience/getty_logo.jpeg'}
 				title={'software developer'}
 				company={'fake company'}
-				technologyImages={['fake/path/image']}
+				technologyImages={['/images/technology/ts_logo.png']}
 				startDate={'startDateString'}
 				endDate={'endDateString'}
 				experienceBulletPoint={['point 1, point2']}
