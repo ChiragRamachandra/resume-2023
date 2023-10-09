@@ -22,7 +22,7 @@ const getProjectData = (): Project[] => {
 			id: 3,
 			name: 'Rainy',
 			imageURL: '/images/projects/rainy.png',
-			projectURL: 'https://www.rainyfilter.com/',
+			projectURL: 'https://www.rainyfilters.com/',
 			summary:
 				'I, as the sole developer, I built a website from end-to-end for a Rainwater Harvesting Company, with a dedicated focus on user experience. The front-end experience included dedicated product pages and rich imagery, resulting in an engaging platform for visitors.',
 		},
