@@ -1,41 +1,32 @@
 import React from 'react';
 import Image from 'next/image';
-import { Cursor, useTypewriter } from 'react-simple-typewriter';
-import { BackgroundCircles } from '../BackgroundCircles';
 import Link from 'next/link';
-import { getHeroBannerText } from 'data';
 
 type Props = {};
 
 export default function Hero({}: Props) {
-	const [text] = useTypewriter({
-		words: getHeroBannerText(),
-		loop: true,
-		delaySpeed: 2000,
-	});
 	return (
 		<div
 			className='h-screen flex flex-col  
 		items-center justify-center text-center overflow-hidden'
 		>
-			{/* <BackgroundCircles /> */}
 			<Image
 				priority
 				loading='eager'
 				className='relative rounded-full mx-auto object-cover'
 				src='/images/profile/chirag_ramachandra.jpg'
 				alt='Picture of the author'
-				width={150}
-				height={150}
+				width={250}
+				height={250}
 			/>
 			<div className='z-20'>
-				<h2 className='text-sm uppercase text-gray-500 py-4 tracking-[15px]'>
+				<h1 className='text-2xl lg:text-4xl font-bold uppercase text-gray-500 py-4 tracking-[5px]'>
+					Chirag Ramachandra
+				</h1>
+				<h2 className='text-lg lg:text-2xl uppercase text-gray-500 tracking-[20px]'>
 					Fullstack Developer
 				</h2>
-				<h1 className='text-5xl lg:text-6xl font-semibold px-10'>
-					<span>{text}</span>
-					<Cursor cursorColor='#F7F232' />
-				</h1>
+
 				<div className='pt-5'>
 					<Link href='#about'>
 						<button className='heroButton'>About</button>

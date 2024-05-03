@@ -4,16 +4,16 @@
 
 @layer components {
 	.heroButton {
-		@apply px-6 py-2 border border-[#242424] 
-		rounded-full uppercase text-xs tracking-widest text-gray-500 
-		transition-all hover:border-[#1ecbe1]/80 hover:text-[#1ecbe1]/80;
+		@apply px-6 py-2 border border-[#242424] rounded-full uppercase text-xs tracking-widest text-gray-500 transition-all hover:border-[#1ecbe1]/80 hover:text-[#1ecbe1]/80;
 	}
 }
+
 .header,
 .footer {
 	overflow: hidden;
 	position: fixed;
 }
+
 .page-content {
 	overflow: auto;
 }
@@ -61,6 +61,7 @@ ol {
 	height: 0;
 	padding-bottom: 56.25%;
 }
+
 .youtube-wrapper iframe {
 	padding-left: 20px;
 	padding-right: 20px;
@@ -76,15 +77,19 @@ ol {
 .bg-yellow-600 {
 	background-color: #f7ab0a;
 }
+
 .bg-blue-600 {
 	background: #1ecbe1;
 }
+
 .bg-green-600 {
 	background-color: #03c988;
 }
+
 .bg-purple-600 {
 	background-color: #00337c;
 }
+
 .bg-red-600 {
 	background-color: #fb2576;
 }
@@ -107,16 +112,19 @@ ol {
 	color: #1ecbe1 !important;
 	font-size: 10px !important;
 }
+
 @media (max-width: 420px) {
 	.swiper-button-next {
 		padding-left: 24px;
 	}
+
 	.swiper-button-prev {
 		padding-right: 24px;
 	}
 }
 
 @media (max-width: 780px) {
+
 	.swiper-button-next:after,
 	.swiper-button-prev:after {
 		font-size: 24px !important;
