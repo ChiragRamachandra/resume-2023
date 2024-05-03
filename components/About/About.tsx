@@ -7,7 +7,7 @@ const About = (props: Props) => {
 	return (
 		<div className='h-screen flex flex-col text-center max-w-7xl justify-evenly mx-auto items-center p-5'>
 			<div className='my-6'>
-				<h3 className='uppercase tracking-[20px] text-gray-500 text-2xl '>
+				<h3 className='uppercase font-bold tracking-[20px] text-gray-500 text-2xl '>
 					About
 				</h3>
 			</div>

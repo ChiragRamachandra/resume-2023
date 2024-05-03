@@ -17,22 +17,26 @@ const Experience = (props: Props) => {
 	const experienceData = getExperienceData();
 	return (
 		<div className='flex flex-col items-center p-4 lg:my-36'>
-			<h3 className='uppercase tracking-[20px] text-gray-500 text-2xl my-12 pb-2'>
+			<h3 className='uppercase font-bold tracking-[20px] text-gray-500 text-2xl my-12 pb-2'>
 				Experience
 			</h3>
 			<Swiper
 				// install Swiper modules
 				modules={[Navigation, Pagination, Scrollbar, A11y]}
-				spaceBetween={50}
+				spaceBetween={20}
 				navigation
 				scrollbar={{ draggable: true }}
 				breakpointsBase='window'
-				breakpoints={{ 420: { slidesPerView: 2 }, 1280: { slidesPerView: 3 } }}
+				breakpoints={{
+					440: { slidesPerView: 1 },
+					768: { slidesPerView: 2 },
+					1280: { slidesPerView: 3 },
+				}}
 			>
 				{experienceData.map((experience) => (
 					<SwiperSlide
 						key={experience.id}
-						className='bg-[rgb(36,36,36)] text-white flex flex-col items-center justify-center p-6'
+						className='flex flex-col items-center justify-center p-6'
 					>
 						<ExperienceCard
 							id={experience.id}
