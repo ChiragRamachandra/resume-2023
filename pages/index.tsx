@@ -9,6 +9,7 @@ import { Footer } from '../components/Footer';
 
 import { ChevronUpIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
+import { Divider } from '@/components/Divider';
 
 export default function Home() {
 	return (
@@ -23,22 +24,27 @@ export default function Home() {
 
 			<section id='hero'>
 				<Hero />
+				<Divider />
 			</section>
 
 			<section id='about'>
 				<About />
+				<Divider />
 			</section>
 
 			<section id='experience'>
 				<Experience />
+				<Divider />
 			</section>
 
 			<section id='skills'>
 				<Skills />
+				<Divider />
 			</section>
 
 			<section id='projects'>
 				<Projects />
+				<Divider />
 			</section>
 
 			<div className='sticky bottom-14 flex justify-end max-w-7xl mx-auto z-20 '>
