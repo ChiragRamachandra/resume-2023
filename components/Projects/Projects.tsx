@@ -2,14 +2,6 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { getProjectData } from 'data';
 import Link from 'next/link';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 
 type Props = {};
 
@@ -36,20 +28,20 @@ const Projects = (props: Props) => {
 				</div>
 				<div className='flex md:w-1/2 flex-col  md:justify-start justify-center items-center md:items-start'>
 					<Link href={selectedProject.projectURL} target='_blank'>
-						<h4 className='my-2 p-2 text-2xl md:text-2xl font-bold text-start uppercase tracking-[5px] text-[#F7AB0A]/75'>
+						<h4 className='my-2 p-2 text-2xl md:text-2xl font-bold text-start uppercase tracking-[5px] text-[#F7AB0A]/75 ease-in duration-300'>
 							{selectedProject.name}
 						</h4>
 					</Link>
 
-					<div className='max-w-[600px] my-4'>
+					<div className='max-w-[600px] my-4 ease-in duration-300'>
 						<Image
-							className='p-2 rounded-lg'
+							className='p-2 rounded-lg ease-in duration-300'
 							width={600}
 							height={600}
 							src={selectedProject.imageURL}
 							alt={selectedProject.name}
 						/>
-						<p className='p-2 text-base text-justify'>
+						<p className='p-2 text-base text-justify ease-in duration-300'>
 							{selectedProject.summary}
 						</p>
 					</div>

@@ -44,7 +44,6 @@ export default function Home() {
 
 			<section id='projects'>
 				<Projects />
-				<Divider />
 			</section>
 
 			<div className='sticky bottom-14 flex justify-end max-w-7xl mx-auto z-20 '>
@@ -52,7 +51,7 @@ export default function Home() {
 					<ChevronUpIcon className='h-10 w-10 background mr-3 text-gray-400' />
 				</Link>
 			</div>
-
+			<Divider />
 			<Footer />
 		</div>
 	);
