@@ -3,6 +3,7 @@ import React from 'react';
 import { HomeIcon } from '@heroicons/react/24/solid';
 import { SocialIcon } from 'react-social-icons';
 import { getSocialsData } from 'data';
+import { ModeToggle } from '../ModeToggle';
 
 type Props = {};
 
@@ -24,6 +25,7 @@ const Header = (props: Props) => {
 							bgColor='transparent'
 						/>
 					))}
+					<ModeToggle />
 				</nav>
 			</div>
 		</header>
