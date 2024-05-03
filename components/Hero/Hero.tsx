@@ -18,7 +18,7 @@ export default function Hero({}: Props) {
 			className='h-screen flex flex-col  
 		items-center justify-center text-center overflow-hidden'
 		>
-			<BackgroundCircles />
+			{/* <BackgroundCircles /> */}
 			<Image
 				priority
 				loading='eager'

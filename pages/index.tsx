@@ -12,7 +12,7 @@ import Link from 'next/link';
 
 export default function Home() {
 	return (
-		<div className='bg-[rgb(36,36,36)] text-white h-screen  z-0 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#1ecbe1]/80 '>
+		<div className='  h-screen  z-0 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#1ecbe1]/80 '>
 			<Head>
 				<title>Chirag Ramachandra</title>
 				<meta name='description' content='Fullstack developer' />

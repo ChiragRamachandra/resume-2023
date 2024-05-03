@@ -10,10 +10,10 @@ type Props = {};
 const Header = (props: Props) => {
 	const socialLinks = getSocialsData();
 	return (
-		<header className='bg-[rgb(36,36,36)] text-gray-100 w-full'>
+		<header className='w-full'>
 			<div className='container mx-auto flex flex-wrap p-5 flex-row  justify-between items-center'>
 				<Link href='/'>
-					<HomeIcon className='  h-8 w-8 background mr-4 text-gray-400' />
+					<HomeIcon className='h-8 w-8 background mr-4' />
 				</Link>
 				<nav className='flex flex-wrap md:w-4/5 items-center justify-end text-base md:ml-auto'>
 					{socialLinks.map((socialLink) => (
@@ -21,8 +21,9 @@ const Header = (props: Props) => {
 							key={socialLink.id}
 							target='_blank'
 							url={socialLink.url}
-							fgColor='grey'
 							bgColor='transparent'
+							fgColor='currentColor'
+							className='text-black dark:text-white'
 						/>
 					))}
 					<ModeToggle />
