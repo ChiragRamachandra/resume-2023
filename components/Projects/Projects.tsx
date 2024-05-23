@@ -27,7 +27,7 @@ const Projects = (props: Props) => {
 				</div>
 				<div className='flex md:w-1/2 flex-col  md:justify-start justify-center items-center md:items-start'>
 					<Link href={selectedProject.projectURL} target='_blank'>
-						<h4 className='my-2 p-2 text-2xl md:text-2xl font-bold text-start uppercase tracking-[5px] text-[#F7AB0A]/75 ease-in duration-300'>
+						<h4 className='my-2 p-2 text-2xl md:text-2xl font-bold text-start uppercase tracking-[5px] text-[#F7AB0A]/75 ease-in duration-300 hover:underline'>
 							{selectedProject.name}
 						</h4>
 					</Link>

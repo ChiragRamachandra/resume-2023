@@ -8,7 +8,7 @@ const getProjectData = (): Project[] => {
 			imageURL: '/images/projects/oat.png',
 			projectURL: 'https://www.ownerandtenant.com/',
 			summary:
-				'I led a team of developers and collaborated with cross-functional stakeholders to build a state-of-the-art real estate and property management platform called Owner & Tenant. With a complete tech stack and architecture, including Python, JavaScript, Node, and CSS, the platform served over 50K users and rapidly scaled.',
+				'I led a team of developers to create a cutting-edge real estate and property management platform called Owner & Tenant. Collaborating with cross-functional stakeholders, we built the platform using a comprehensive tech stack and architecture, including Python, JavaScript, Node, and CSS. As a result, the platform successfully served over 50,000 users and scaled rapidly.',
 		},
 		{
 			id: 2,
@@ -16,7 +16,7 @@ const getProjectData = (): Project[] => {
 			imageURL: '/images/projects/vintage.png',
 			projectURL: 'https://www.thevintageckm.com/',
 			summary:
-				'I developed a dynamic and interactive website for The Vintage, a boutique luxury homestay, resulting in a 60% boost in sales through increased online presence, high traffic, page views, and reservations.',
+				"I developed a dynamic and interactive website for The Vintage, a boutique luxury homestay. This project significantly boosted the business's online presence, leading to a 60% increase in sales through higher traffic, more page views, and increased reservations.",
 		},
 		{
 			id: 3,
@@ -24,7 +24,7 @@ const getProjectData = (): Project[] => {
 			imageURL: '/images/projects/rainy.png',
 			projectURL: 'https://www.rainyfilters.com/',
 			summary:
-				'I, as the sole developer, I built a website from end-to-end for a Rainwater Harvesting Company, with a dedicated focus on user experience. The front-end experience included dedicated product pages and rich imagery, resulting in an engaging platform for visitors.',
+				'As the sole developer, I built an end-to-end website for a Rainwater Harvesting Company. With a strong focus on user experience, the front-end featured dedicated product pages and rich imagery. This resulted in an engaging platform for visitors.',
 		},
 		{
 			id: 4,
@@ -32,7 +32,7 @@ const getProjectData = (): Project[] => {
 			imageURL: '/images/projects/ramansports.png',
 			projectURL: 'https://www.ramansportsacademy.com/',
 			summary:
-				"I created a simple yet effective website for a sporting academy that aimed to educate customers on various courses offered and methods to sign up. The website successfully showcased the academy's offerings, resulting in increased customer engagement and sign-ups.",
+				"I created a simple yet effective website for a sporting academy, aimed at educating customers on various courses offered and methods to sign up. The website successfully showcased the academy's offerings, resulting in increased customer engagement and sign-ups.",
 		},
 		{
 			id: 5,
@@ -40,7 +40,7 @@ const getProjectData = (): Project[] => {
 			imageURL: '/images/projects/consultaspire.png',
 			projectURL: 'https://consultaspire.com/',
 			summary:
-				'My end-to-end development of a website for a boutique consulting firm, specializing in helping students achieve their dreams of studying abroad, included a special focus on writing services. This resulted in increased customer engagement, driving more consult bookings and revenue growth of 40%.',
+				'I developed an end-to-end website for a boutique consulting firm specializing in helping students achieve their dreams of studying abroad. With a special focus on writing services, the website increased customer engagement, driving more consult bookings and achieving a 40% revenue growth.',
 		},
 	];
 };
