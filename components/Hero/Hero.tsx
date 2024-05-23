@@ -20,12 +20,12 @@ export default function Hero({}: Props) {
 				height={250}
 			/>
 			<div className='z-20'>
-				<h1 className='text-2xl lg:text-4xl font-bold uppercase text-gray-500 py-4 tracking-[5px]'>
+				<h1 className='text-2xl lg:text-4xl font-bold uppercase text-gray-500 py-4 '>
 					Chirag Ramachandra
 				</h1>
-				<h2 className='text-lg lg:text-2xl uppercase text-gray-500 tracking-[20px]'>
+				<h3 className='text-lg lg:text-2xl uppercase text-gray-500 font-semibold'>
 					Fullstack Developer
-				</h2>
+				</h3>
 
 				<div className='pt-5'>
 					<Link href='#about'>

@@ -21,7 +21,7 @@ const ExperienceCard = ({
 			dark:shadow-[8px_8px_0_0_#000] my-4'
 			>
 				<CardContent>
-					<article className='flex flex-col items-center space-y-7 flex-shrink-0  opacity-100	cursor-pointer overflow-hidden p-4 '>
+					<article className='flex flex-col items-center mt-12 flex-shrink-0  opacity-100	cursor-pointer overflow-hidden p-2 '>
 						<Image
 							height={200}
 							width={200}
@@ -47,7 +47,7 @@ const ExperienceCard = ({
 								))}
 							</div>
 							<p className='uppercase py-2'>{`${startDate} - ${endDate}`}</p>
-							<div className='overflow-y-scroll h-60 xl:h-76 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#1ecbe1]/80'>
+							{/* <div className='overflow-y-scroll h-60 xl:h-76 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#1ecbe1]/80'>
 								{experienceBulletPoint.map((bulletPoint, idx) => (
 									<p
 										className='p-1 space-y-1 text-sm text-justify mr-3 whitespace-pre-wrap'
@@ -56,7 +56,7 @@ const ExperienceCard = ({
 										{bulletPoint}
 									</p>
 								))}
-							</div>
+							</div> */}
 						</div>
 					</article>
 				</CardContent>

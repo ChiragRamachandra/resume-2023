@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { getProjectData } from 'data';
 import Link from 'next/link';
+import { SubHeading } from '../SubHeading';
 
 type Props = {};
 
@@ -10,20 +11,18 @@ const Projects = (props: Props) => {
 	const [selectedProject, setSelectedProject] = useState(allProjects[0]);
 
 	return (
-		<div className='flex flex-col items-center justify-start p-4 lg:mt-16'>
-			<h3 className='uppercase font-bold tracking-[20px] text-gray-500 text-3xl mb-20'>
-				Projects
-			</h3>
-			<div className='w-full flex flex-col md:flex-row items-center justify-center'>
-				<div className='w-full md:w-1/2 flex flex-wrap md:flex-col flex-row md:pl-6 md:ml-4 items-start justify-start overscroll-x-auto my-6'>
+		<div className='flex flex-col items-center justify-start p-4'>
+			<SubHeading>Projects</SubHeading>
+			<div className='w-full flex flex-col md:flex-row items-center justify-center mt-12'>
+				<div className='w-full md:w-1/2 flex flex-wrap md:flex-col flex-row md:pl-6 md:ml-4 md:items-start items-center md:justify-start justify-center overscroll-x-auto my-6'>
 					{allProjects.map((project) => (
-						<p
+						<button
 							onClick={() => setSelectedProject(project)}
 							key={project.id}
-							className='uppercase font-bold md:tracking-[4px] text-gray-500 text-sm md:text-xl md:mb-12 mb-2 cursor-pointer m-2 underline hover:text-[#1ecbe1]'
+							className='uppercase font-bold heroButton text-gray-500 text-sm md:text-xl md:mb-10 mb-2 cursor-pointer m-2 '
 						>
 							{project.name}
-						</p>
+						</button>
 					))}
 				</div>
 				<div className='flex md:w-1/2 flex-col  md:justify-start justify-center items-center md:items-start'>
