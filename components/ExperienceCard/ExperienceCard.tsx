@@ -29,24 +29,26 @@ const ExperienceCard = ({
 							src={imageUrl}
 							alt={`${company}-company-logo`}
 						/>
-						<div className='px-0 md:px-4'>
-							<h4 className='text-lg font-bold whitespace-pre-wrap'>{title}</h4>
-							<p className='font-bold text-lg mt-1 whitespace-pre-wrap'>
+						<div className='px-0 md:px-1'>
+							<h3 className='text-2xl font-semibold whitespace-pre-wrap mb-2 mt-4'>
+								{title}
+							</h3>
+							<h4 className='font-semibold text-xl mt-1 whitespace-pre-wrap my-2'>
 								{company}
-							</p>
-							<div className='flex space-x-2 my-2'>
+							</h4>
+							<div className='flex space-x-2 my-4'>
 								{technologyImages.map((technology, idx) => (
 									<Image
 										key={idx}
-										height={40}
-										width={40}
+										height={50}
+										width={50}
 										src={technology}
 										alt='language'
-										className='h-4 w-4'
+										className='h-5 w-5'
 									/>
 								))}
 							</div>
-							<p className='uppercase py-2'>{`${startDate} - ${endDate}`}</p>
+							<p className='uppercase py-2 font-medium text-lg'>{`${startDate} - ${endDate}`}</p>
 							{/* <div className='overflow-y-scroll h-60 xl:h-76 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#1ecbe1]/80'>
 								{experienceBulletPoint.map((bulletPoint, idx) => (
 									<p
