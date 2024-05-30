@@ -20,7 +20,7 @@ const getSocialsData = (): Socials[] => {
 		{
 			id: 4,
 			isOpenNewPage: true,
-			url: 'https://www.instagram.com/fullstack_webdev/',
+			url: 'https://www.instagram.com/startdev_org',
 		},
 	];
 };
