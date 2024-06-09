@@ -7,6 +7,7 @@ import { POSTS_PER_PAGE } from '@/data/blog';
 import { getPosts } from '@/lib/posts';
 import Posts from 'types/posts';
 import { Footer } from '@/components/Footer';
+import { SubHeading } from '@/components/SubHeading';
 
 interface BlogPageProps {
 	posts: Posts[];
@@ -20,9 +21,10 @@ const BlogPage = ({ posts, numPages, currentPage }: BlogPageProps) => {
 			<div className=' h-screen top-24'>
 				<div className='flex justify-between flex-col md:flex-row'>
 					<div className='m-4 md:m-10 text-center'>
-						<h1 className='text-2xl uppercase text-gray-500 my-5 p-2 md:p-5 tracking-[15px]'>
+						<SubHeading>Blog</SubHeading>
+						{/* <h1 className='text-2xl uppercase  my-5 p-2 md:p-5 tracking-[15px]'>
 							Blog
-						</h1>
+						</h1> */}
 
 						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5 p-4'>
 							{posts.map((post: Posts, index: number) => (
