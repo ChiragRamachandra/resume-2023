@@ -19,7 +19,7 @@ export default function Post({ post, compact }: any) {
 
 			<div className='mt-2'>
 				<Link href={`/blog/${post?.slug}`}>
-					<span className='text-xl  font-bold hover:underline m-2 hover:decoration-[#1ecbe1]'>
+					<span className='text-xl  font-bold hover:underline my-2 hover:decoration-[#1ecbe1]'>
 						{post?.frontmatter?.title}
 					</span>
 				</Link>
