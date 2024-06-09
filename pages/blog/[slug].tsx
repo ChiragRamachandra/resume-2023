@@ -7,6 +7,7 @@ import { Layout } from '@/components/Layout';
 import { Footer } from '@/components/Footer';
 import Image from 'next/image';
 import { Frontmatter } from 'types/posts';
+import { SubHeading } from '@/components/SubHeading';
 
 interface PostPage {
 	frontmatter: Frontmatter;
@@ -22,10 +23,10 @@ export default function PostPage({
 	return (
 		<Layout title={title}>
 			<div>
-				<div className='px-4 py-4 mt-6'>
+				<div className='p-2 mt-2 md:mt-6 md:pt-4'>
 					{/* BREADCRUMB */}
 					<div>
-						<div className='flex items-start justify-start p-5'>
+						<div className='flex items-start justify-start p-1 md:p-5'>
 							<Link
 								className='mx-1 uppercase text-gray-500 text-sm hover:underline decoration-[#1ecbe1]'
 								href='/'
@@ -43,10 +44,8 @@ export default function PostPage({
 					</div>
 				</div>
 
-				<div className='flex justify-center items-center mt-4'>
-					<h1 className='mb-7 uppercase tracking-[10px] text-gray-500 text-2xl px-4 md:text-4xl'>
-						{title}
-					</h1>
+				<div className='flex justify-center items-center mt-4 px-4'>
+					<SubHeading>{title}</SubHeading>
 				</div>
 
 				<div className='flex flex-row  items-center justify-center'>
