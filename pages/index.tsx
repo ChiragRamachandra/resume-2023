@@ -54,6 +54,7 @@ export default function Home({ posts }: HomeProps) {
 
 			<section id='projects'>
 				<Projects />
+				<Divider />
 			</section>
 
 			<section>
