@@ -141,3 +141,43 @@ ol {
 /* rgb(36,36,36) - background grey color*/
 
 /* https://colorhunt.co/palettes/dark */
+
+.bg-grid-dark {
+	background-size: 40px 40px;
+	background-image: linear-gradient(to right, rgb(255 255 255 / 0.05) 1px, transparent 1px),
+		linear-gradient(to bottom, rgb(255 255 255 / 0.05) 1px, transparent 1px);
+}
+
+.bg-grid-white {
+	background-size: 40px 40px;
+	background-image: linear-gradient(to right, rgb(0 0 0 / 0.05) 1px, transparent 1px),
+		linear-gradient(to bottom, rgb(0 0 0 / 0.05) 1px, transparent 1px);
+}
+
+@keyframes gradient-xy {
+
+	0%,
+	100% {
+		background-size: 400% 400%;
+		background-position: left top;
+	}
+
+	25% {
+		background-size: 400% 400%;
+		background-position: right top;
+	}
+
+	50% {
+		background-size: 400% 400%;
+		background-position: right bottom;
+	}
+
+	75% {
+		background-size: 400% 400%;
+		background-position: left bottom;
+	}
+}
+
+.animate-gradient-xy {
+	animation: gradient-xy 15s ease infinite;
+}

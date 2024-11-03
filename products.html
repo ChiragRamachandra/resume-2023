@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Products | Portfolio</title>
+	<style>
+		:root {
+			--primary-color: #2563eb;
+			--secondary-color: #1e40af;
+			--background-color: #f8fafc;
+			--card-background: #ffffff;
+			--text-color: #1f2937;
+		}
+
+		body {
+			font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+			background-color: var(--background-color);
+			color: var(--text-color);
+			line-height: 1.6;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 2rem;
+		}
+
+		.header {
+			text-align: center;
+			margin-bottom: 4rem;
+		}
+
+		.header h1 {
+			font-size: 2.5rem;
+			color: var(--primary-color);
+			margin-bottom: 1rem;
+		}
+
+		.header p {
+			font-size: 1.2rem;
+			color: #64748b;
+		}
+
+		.products-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 2rem;
+		}
+
+		.product-card {
+			background: var(--card-background);
+			border-radius: 1rem;
+			padding: 2rem;
+			box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+			transition: transform 0.2s ease-in-out;
+		}
+
+		.product-card:hover {
+			transform: translateY(-5px);
+		}
+
+		.product-icon {
+			width: 64px;
+			height: 64px;
+			margin-bottom: 1rem;
+		}
+
+		.product-title {
+			font-size: 1.5rem;
+			font-weight: 600;
+			margin-bottom: 1rem;
+			color: var(--primary-color);
+		}
+
+		.product-description {
+			margin-bottom: 1.5rem;
+			color: #4b5563;
+		}
+
+		.product-links {
+			display: flex;
+			gap: 1rem;
+		}
+
+		.product-link {
+			display: inline-flex;
+			align-items: center;
+			padding: 0.5rem 1rem;
+			background-color: var(--primary-color);
+			color: white;
+			text-decoration: none;
+			border-radius: 0.5rem;
+			font-weight: 500;
+			transition: background-color 0.2s ease-in-out;
+		}
+
+		.product-link:hover {
+			background-color: var(--secondary-color);
+		}
+
+		.store-badge {
+			height: 40px;
+			margin-right: 0.5rem;
+		}
+
+		@media (max-width: 768px) {
+			.container {
+				padding: 1rem;
+			}
+
+			.products-grid {
+				grid-template-columns: 1fr;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<header class="header">
+			<h1>My Products</h1>
+			<p>Explore my collection of apps and tools designed to make your life easier</p>
+		</header>
+
+		<div class="products-grid">
+			<div class="product-card">
+				<img src="path/to/startdev-icon.png" alt="StartDev Icon" class="product-icon">
+				<h2 class="product-title">StartDev</h2>
+				<p class="product-description">
+					An open-source learning platform helping developers kickstart their journey with free resources and curated
+					content.
+				</p>
+				<div class="product-links">
+					<a href="https://www.startdev.org" class="product-link">Visit Website</a>
+				</div>
+			</div>
+
+			<div class="product-card">
+				<img src="path/to/splitsbill-icon.png" alt="SplitsBill Icon" class="product-icon">
+				<h2 class="product-title">SplitsBill</h2>
+				<p class="product-description">
+					Simplify group expenses and bill splitting with our intuitive expense sharing solution.
+				</p>
+				<div class="product-links">
+					<a href="https://splitsbill.com" class="product-link">Visit Website</a>
+				</div>
+			</div>
+
+			<div class="product-card">
+				<img src="path/to/codeflowjam-icon.png" alt="CodeFlowJam Icon" class="product-icon">
+				<h2 class="product-title">CodeFlowJam</h2>
+				<p class="product-description">
+					Enhance your coding workflow with our developer-focused productivity tools.
+				</p>
+				<div class="product-links">
+					<a href="https://www.codeflowjam.com" class="product-link">Visit Website</a>
+				</div>
+			</div>
+
+			<div class="product-card">
+				<img src="path/to/tax-calculator-icon.png" alt="Sales Tax Calculator Icon" class="product-icon">
+				<h2 class="product-title">Sales Tax Calculator</h2>
+				<p class="product-description">
+					Instantly calculate sales tax, income tax, or VAT with our user-friendly calculator app. Features include tip
+					calculation and multiple tax options.
+				</p>
+				<div class="product-links">
+					<a href="https://apps.apple.com/us/app/sales-tax-calculator/id6737439748" class="product-link">
+						<img src="path/to/app-store-badge.png" alt="Download on App Store" class="store-badge">
+					</a>
+					<a href="https://play.google.com/store/apps/details?id=com.chiragramachandra.taxcalculator"
+						class="product-link">
+						<img src="path/to/play-store-badge.png" alt="Get it on Google Play" class="store-badge">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
