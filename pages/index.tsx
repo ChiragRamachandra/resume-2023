@@ -16,6 +16,7 @@ import { ChevronUpIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
 import { Divider } from '@/components/Divider';
 import { BlogSection } from '@/components/BlogSection';
+import { ProductsSection } from '@/components/ProductsSection';
 
 interface HomeProps {
 	posts: Posts[];
@@ -44,6 +45,11 @@ export default function Home({ posts }: HomeProps) {
 
 			<section id='skills'>
 				<Skills />
+				<Divider />
+			</section>
+
+			<section id='products'>
+				<ProductsSection />
 				<Divider />
 			</section>
 
