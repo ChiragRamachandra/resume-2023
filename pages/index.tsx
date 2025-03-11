@@ -42,11 +42,6 @@ export default function Home({ posts }: HomeProps) {
 				<Divider />
 			</section>
 
-			<section id='experience'>
-				<Experience />
-				<Divider />
-			</section>
-
 			<section id='skills'>
 				<Skills />
 				<Divider />

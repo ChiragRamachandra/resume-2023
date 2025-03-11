@@ -10,7 +10,7 @@ const Skills = (props: Props) => {
 	return (
 		<>
 			<div className='flex relative flex-col text-center md:text-left max-w-7xl justify-evenly mx-auto items-center p-5 font-bold'>
-				<SubHeading>Skills</SubHeading>
+				<SubHeading>Languages that I generally use</SubHeading>
 
 				<div className='px-4 md:px-10 mt-12'>
 					<div className='grid grid-cols-3 md:grid-cols-4 gap-6 p-2 md:gap-16'>
