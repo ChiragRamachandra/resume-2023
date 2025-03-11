@@ -1,6 +1,6 @@
 ---
 title: 'Understanding Debouncing in React'
-date: 'Oct 15, 2023'
+date: 'Oct 15, 2024'
 excerpt: 'Learn how to implement debouncing in React applications using a search input example.'
 cover_image: 'https://images.unsplash.com/photo-1542831371-d531d36971e6?'
 category: 'Web Development'
