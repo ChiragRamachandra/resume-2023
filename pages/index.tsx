@@ -43,13 +43,13 @@ export default function Home({ posts }: HomeProps) {
 				<Divider />
 			</section>
 
-			<section id='skills'>
-				<Skills />
+			<section id='products'>
+				<ProductsSection />
 				<Divider />
 			</section>
 
-			<section id='products'>
-				<ProductsSection />
+			<section id='skills'>
+				<Skills />
 				<Divider />
 			</section>
 
