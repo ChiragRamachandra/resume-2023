@@ -9,6 +9,9 @@ const nextConfig = {
 			'unsplash.com',
 			'gravatar.com',
 			'1.gravatar.com',
+			'www.codeflowjam.com',
+			'www.startdev.org',
+			'jsinterview.tech',
 		],
 	},
 };
