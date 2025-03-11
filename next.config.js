@@ -12,6 +12,7 @@ const nextConfig = {
 			'www.codeflowjam.com',
 			'www.startdev.org',
 			'jsinterview.tech',
+			'www.jsinterview.tech',
 		],
 	},
 };

@@ -43,7 +43,7 @@ const products = [
 		title: 'JS Interview Prep',
 		description:
 			'A collection of resources and tools to help you prepare for your next JavaScript interview.',
-		icon: '/icons/js-interview-tech.png',
+		icon: 'https://www.jsinterview.tech/img/jsInterview.png',
 		url: 'https://www.jsinterview.tech/',
 		productUrl: '/jsinterview',
 	},
