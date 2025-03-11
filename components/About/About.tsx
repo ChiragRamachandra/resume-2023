@@ -7,7 +7,7 @@ type Props = {};
 const About = (props: Props) => {
 	return (
 		<div className='flex flex-col text-center max-w-7xl justify-evenly mx-auto items-center p-5'>
-			<SubHeading>About</SubHeading>
+			{/* <SubHeading>About</SubHeading> */}
 
 			<div className='flex flex-col md:text-left md:flex-row justify-center items-center mt-12'>
 				<div className='m-6 flex-shrink-0'>
