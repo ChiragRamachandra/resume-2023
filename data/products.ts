@@ -23,6 +23,7 @@ const products = [
 			'Enhance your coding workflow with our developer-focused productivity tools.',
 		icon: '/icons/code-flow-jam.svg',
 		url: 'https://www.codeflowjam.com',
+		productUrl: '/codeflowjam',
 	},
 	{
 		id: 4,
@@ -35,6 +36,7 @@ const products = [
 			android:
 				'https://play.google.com/store/apps/details?id=com.chiragramachandra.taxcalculator',
 		},
+		productUrl: '/salestaxcalculator',
 	},
 	{
 		id: 5,
@@ -43,6 +45,7 @@ const products = [
 			'A collection of resources and tools to help you prepare for your next JavaScript interview.',
 		icon: '/icons/js-interview.png',
 		url: 'https://www.jsinterview.tech/',
+		productUrl: '/jsinterview',
 	},
 ];
 
