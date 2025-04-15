@@ -53,7 +53,54 @@ ol {
 .blog-text h3,
 .blog-text h4 {
 	font-size: 26px;
+	text-align: left;
 }
+
+/* Blog post styling */
+.blog-text {
+	line-height: 1.8;
+}
+
+.blog-text h1 {
+	@apply text-4xl font-bold my-6;
+}
+
+.blog-text h2 {
+	@apply text-3xl font-bold my-5;
+}
+
+.blog-text h3 {
+	@apply text-2xl font-bold my-4;
+}
+
+.blog-text p {
+	@apply my-4;
+}
+
+.blog-text ul {
+	@apply list-disc my-4 ml-4;
+}
+
+.blog-text ol {
+	@apply list-decimal list-inside my-4 ml-4;
+}
+
+.blog-text li {
+	@apply my-2;
+	font-weight: bold;
+	list-style-type: square;
+
+}
+
+.blog-text a {
+	@apply text-[#1ecbe1] underline hover:text-[#1ecbe1]/80;
+}
+
+.blog-text blockquote {
+	@apply border-l-2 border-gray-300 pl-4 py-2 my-4;
+}
+
+
 
 .youtube-wrapper {
 	position: relative;
