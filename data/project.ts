@@ -36,7 +36,7 @@ const getProjectData = (): Project[] => {
 		},
 		{
 			id: 4,
-			name: 'Raman Sports Academy',
+			name: 'Raman Sports',
 			imageURL: '/images/projects/ramansports.png',
 			projectURL: 'https://ramansportsacademy.vercel.app/',
 			summary:
