@@ -8,6 +8,22 @@
 	}
 }
 
+@layer utilities {
+
+	/* Hide scrollbar while allowing scrolling */
+	.no-scrollbar {
+		-ms-overflow-style: none;
+		/* IE and Edge */
+		scrollbar-width: none;
+		/* Firefox */
+	}
+
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+		/* Chrome, Safari and Opera */
+	}
+}
+
 .header,
 .footer {
 	overflow: hidden;

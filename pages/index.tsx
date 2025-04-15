@@ -1,10 +1,7 @@
-import fs from 'fs';
-import path from 'path';
 import Head from 'next/head';
 import { Header } from '../components/Header';
 import { Hero } from '../components/Hero';
 import { About } from '../components/About';
-import { Experience } from '../components/Experience';
 import { Skills } from '../components/Skills';
 import { Projects } from '../components/Projects';
 import { Footer } from '../components/Footer';
@@ -43,6 +40,11 @@ export default function Home({ posts }: HomeProps) {
 				<Divider />
 			</section>
 
+			<section id='projects'>
+				<Projects />
+				<Divider />
+			</section>
+
 			<section id='products'>
 				<ProductsSection />
 				<Divider />
@@ -50,11 +52,6 @@ export default function Home({ posts }: HomeProps) {
 
 			<section id='skills'>
 				<Skills />
-				<Divider />
-			</section>
-
-			<section id='projects'>
-				<Projects />
 				<Divider />
 			</section>
 

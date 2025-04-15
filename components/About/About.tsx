@@ -24,19 +24,28 @@ const About = (props: Props) => {
 
 				<div className='space-y-10 px-4 md:px-10 mr-2'>
 					<h4 className='text-4xl font-semibold'>
-						A <span className='text-[#1ecbe1]'>little</span> bit about me.
+						Turning <span className='text-[#1ecbe1]'>ideas</span> into reality.
 					</h4>
 					<p className='text-sm md:text-base text-justify'>
-						I am a Full Stack Developer currently employed at Getty Images,
-						passionate about transforming ideas into functional products. With a
-						wide range of skills and expertise, I am equipped to help bring your
-						next project to life.
+						I&apos;m a Senior Full Stack Engineer at Getty Images, where I
+						transform visionary concepts into tangible, impactful products. My
+						role goes beyond coding - I architect solutions, make strategic
+						technical decisions, and ensure that every product I build not only
+						works but thrives in the real world.
 					</p>
 					<p className='text-sm md:text-base text-justify'>
-						My approach is to work smart and leverage existing tools and APIs to
-						save time and effort. Throughout my projects, I incorporate agile
-						principles to effectively manage timelines and expectations, and
-						deliver high-quality results.
+						What sets me apart is my ability to wear multiple hats - from
+						technical architect to product strategist. I excel at understanding
+						the big picture while maintaining attention to technical detail.
+						Whether you need a complete product built from scratch or technical
+						leadership for your existing project, I can step in as a tech lead
+						to guide your vision to success.
+					</p>
+					<p className='text-sm md:text-base text-justify'>
+						My approach combines technical excellence with product thinking. I
+						don&apos;t just build features; I create solutions that solve real
+						problems and deliver value. If you have an idea that needs to be
+						brought to life, I&apos;m here to make it happen.
 					</p>
 				</div>
 			</div>

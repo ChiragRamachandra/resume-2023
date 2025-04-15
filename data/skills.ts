@@ -29,48 +29,38 @@ const getSkillsData = (): Skills[] => {
 		},
 		{
 			id: 6,
-			name: 'HTML',
-			url: '/images/technology/html_logo.png',
-		},
-		{
-			id: 7,
 			name: 'JS',
 			url: '/images/technology/javascript_logo.png',
 		},
 		{
-			id: 8,
+			id: 7,
 			name: 'MongoDB',
 			url: '/images/technology/mongodb_logo.png',
 		},
 		{
-			id: 9,
+			id: 8,
 			name: 'MYSQL',
 			url: '/images/technology/mysql_logo.png',
 		},
 		{
-			id: 10,
+			id: 9,
 			name: 'NextJS',
 			url: '/images/technology/nextjs_logo.jpeg',
 		},
 		{
-			id: 11,
+			id: 10,
 			name: 'NodeJS',
 			url: '/images/technology/nodejs_logo.png',
 		},
 		{
-			id: 12,
+			id: 11,
 			name: 'React',
 			url: '/images/technology/react_logo.png',
 		},
 		{
-			id: 13,
+			id: 12,
 			name: 'Native',
 			url: '/images/technology/reactnative_logo.png',
-		},
-		{
-			id: 14,
-			name: 'Redux',
-			url: '/images/technology/redux_logo.png',
 		},
 	];
 };
