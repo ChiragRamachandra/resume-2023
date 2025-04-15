@@ -57,56 +57,59 @@ const Projects = (props: Props) => {
 							{/* Project image - spans 5 cols on large screens */}
 							<div className='lg:col-span-5 h-full'>
 								<div className='relative h-full rounded-lg overflow-hidden'>
-									<Image
-										src={selectedProject.imageURL}
-										alt={selectedProject.name}
-										width={800}
-										height={600}
-										className='w-full h-full object-cover'
-									/>
-
-									<div className='absolute bottom-0 left-0 right-0 p-4 z-10'>
-										<Link
-											href={selectedProject.projectURL}
-											target='_blank'
-											className='inline-flex items-center gap-2  px-4 py-2 rounded font-medium text-sm transition-colors'
-											style={{ backgroundColor: accentColor }}
-										>
-											Visit Project
-											<svg
-												className='w-4 h-4'
-												fill='currentColor'
-												viewBox='0 0 20 20'
-											>
-												<path
-													fillRule='evenodd'
-													d='M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z'
-													clipRule='evenodd'
-												></path>
-											</svg>
-										</Link>
-									</div>
+									<Link href={selectedProject.projectURL} target='_blank'>
+										<Image
+											src={selectedProject.imageURL}
+											alt={selectedProject.name}
+											width={800}
+											height={600}
+											className='w-full h-full object-cover'
+										/>
+									</Link>
 								</div>
 							</div>
 
 							{/* Project details - spans 7 cols on large screens */}
-							<div className='lg:col-span-7 flex flex-col justify-center p-2 sm:p-4 md:p-6'>
+							<div className='lg:col-span-7 flex flex-col justify-between h-full p-2 sm:p-4 md:p-6'>
+								<div>
+									<Link
+										href={selectedProject.projectURL}
+										target='_blank'
+										className={`flex mb-4 hover:underline`}
+										style={{ textDecorationColor: accentColor }}
+									>
+										<h3
+											className='text-2xl md:text-3xl font-bold'
+											style={{ color: accentColor }}
+										>
+											{selectedProject.name}
+										</h3>
+									</Link>
+
+									<p className='text-base leading-relaxed md:text-lg'>
+										{selectedProject.summary}
+									</p>
+								</div>
+
 								<Link
 									href={selectedProject.projectURL}
 									target='_blank'
-									className='inline-block mb-4'
+									className='inline-flex items-center gap-2 px-4 py-2 rounded font-medium text-sm transition-colors mt-6 w-fit'
+									style={{ backgroundColor: accentColor }}
 								>
-									<h3
-										className='text-2xl md:text-3xl font-bold'
-										style={{ color: accentColor }}
+									Visit Project
+									<svg
+										className='w-4 h-4'
+										fill='currentColor'
+										viewBox='0 0 20 20'
 									>
-										{selectedProject.name}
-									</h3>
+										<path
+											fillRule='evenodd'
+											d='M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z'
+											clipRule='evenodd'
+										></path>
+									</svg>
 								</Link>
-
-								<p className=' text-base leading-relaxed md:text-lg'>
-									{selectedProject.summary}
-								</p>
 							</div>
 						</div>
 					</div>
