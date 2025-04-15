@@ -22,37 +22,55 @@
 	display: block;
 	word-wrap: break-word;
 	overflow: hidden;
-	white-space: pre-line;
 }
 
-.blog-text ul,
-ol {
-	font-weight: bold;
-	list-style-type: square;
-}
-
-.blog-text a {
-	color: #1ecbe1;
-	text-decoration: underline;
-}
-
-.blog-text pre {
-	padding: 10px;
-	background: #606060;
-	color: #ffffff;
-	width: 85vw;
-	overflow-x: auto;
-	overflow-y: auto;
+/* Blog post styling */
+.blog-text {
+	line-height: 1.8;
 }
 
 .blog-text h1 {
-	font-size: 36px;
+	@apply text-4xl font-bold my-6;
 }
 
-.blog-text h2,
-.blog-text h3,
-.blog-text h4 {
-	font-size: 26px;
+.blog-text h2 {
+	@apply text-3xl font-bold my-5;
+}
+
+.blog-text h3 {
+	@apply text-2xl font-bold my-4;
+}
+
+.blog-text p {
+	@apply my-4;
+}
+
+.blog-text ul {
+	@apply list-disc list-inside my-4 ml-4;
+}
+
+.blog-text ol {
+	@apply list-decimal list-inside my-4 ml-4;
+}
+
+.blog-text li {
+	@apply my-2;
+}
+
+.blog-text a {
+	@apply text-[#1ecbe1] underline hover:text-[#1ecbe1]/80;
+}
+
+.blog-text pre {
+	@apply my-4 p-4 rounded-lg bg-gray-800 overflow-x-auto;
+}
+
+.blog-text code {
+	@apply font-mono text-sm;
+}
+
+.blog-text blockquote {
+	@apply border-l-4 border-[#1ecbe1] pl-4 my-4 italic;
 }
 
 .youtube-wrapper {
